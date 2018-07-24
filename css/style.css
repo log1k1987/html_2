@@ -1,20 +1,38 @@
 @font-face {
-  font-family: 'Roboto';
-  src: url("../../fonts/roboto-bold_1.woff2") format("woff2"), url("../../fonts/roboto-bold_1.woff") format("woff");
-  font-weight: bold;
+  font-family: 'gagalinregular';
+  src: url("../../fonts/Gagalin/gagalin-regular-webfont.woff2") format("woff2"), url("../../fonts/Gagalin/gagalin-regular-webfont.woff") format("woff");
+  font-weight: 400;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Roboto';
-  src: url("../../fonts/roboto-light_1.woff2") format("woff2"), url("../../fonts/roboto-light_1.woff") format("woff");
+  font-family: 'ubuntu';
+  src: url("../../fonts/Ubuntu/ubuntu-b-webfont.woff2") format("woff2"), url("../../fonts/Ubuntu/ubuntu-b-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ubuntu';
+  src: url("../../fonts/Ubuntu/ubuntu-light-webfont.woff2") format("woff2"), url("../../fonts/Ubuntu/ubuntu-light-webfont.woff") format("woff");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Roboto';
-  src: url("../../fonts/roboto-lightitalic_1.woff2") format("woff2"), url("../../fonts/roboto-lightitalic_1.woff") format("woff");
-  font-weight: 300;
-  font-style: italic; }
+  font-family: 'ubuntu';
+  src: url("../../fonts/Ubuntu/ubuntu-medium-webfont.woff2") format("woff2"), url("../../fonts/Ubuntu/ubuntu-medium-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ubuntu';
+  src: url("../../fonts/Ubuntu/ubuntu-regular-webfont.woff2") format("woff2"), url("../../fonts/Ubuntu/ubuntu-regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'lifehackmedium';
+  src: url("../../fonts/lifehack_medium-webfont.woff2") format("woff2"), url("../../fonts/lifehack_medium-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
 
 html, body {
   height: 100%; }
@@ -61,16 +79,22 @@ ul li {
   background: url("../../img/section--header/fon.jpg") center center no-repeat;
   background-size: cover;
   font-size: 13px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-family: "ubuntu", helvetica, sans-serif;
+  font-weight: bold; }
 
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 42px; }
+  margin-bottom: 42px;
+  padding-top: 10px; }
 
 .header__col-left {
   margin-right: auto; }
+
+.logo__link {
+  display: block; }
 
 .header__col-right {
   display: -webkit-box;
@@ -80,62 +104,56 @@ ul li {
   -ms-flex-align: center;
   align-items: center; }
 
-.menu__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
+.menu {
+  margin-right: 11px; }
+  .menu__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .menu__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .menu__item a {
+      text-decoration: none; }
+    .menu__item:after {
+      margin: 0 15px;
+      content: "";
+      display: block;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: #fff; }
+    .menu__item:last-child:after {
+      content: none; }
+  .menu__link {
+    color: #fff; }
 
-.menu__item a {
-  text-decoration: none; }
-
-.menu__item:last-child {
-  margin-right: 30px; }
-
-.menu__item:last-child .menu__link:after {
-  content: none; }
-
-.menu__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  color: #fff; }
-  .menu__link:after {
-    margin: 0 15px;
-    content: "";
+.order-header {
+  margin-right: 20px; }
+  .order-header__link {
+    color: #fff;
     display: block;
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-    background: #fff; }
-
-.order-header__link {
-  color: #fff;
-  display: block;
-  text-decoration: none;
-  padding: 10px 15px;
-  background-color: #e45028;
-  border-radius: 8%; }
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #e45028;
+    border-radius: 8%; }
 
 .bigburger {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding-left: 20px; }
-
-.bigburger__pic {
-  margin-right: 10px; }
-
-.bigburger__text {
-  padding-top: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
+  padding-left: 20px;
+  height: 400px; }
+  .bigburger__pic {
+    margin-right: 10px; }
+  .bigburger__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
