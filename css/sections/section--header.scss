@@ -70,7 +70,7 @@
 .bigburger {
   display: flex;
   padding-left: 20px;
-  height: 400px;
+  margin-bottom: 20%;
   &__pic {
     margin-right: 10px;
   }
@@ -78,4 +78,8 @@
     display: flex;
     align-items: center;
   }
+}
+.arrow-down {
+  display: flex;
+  justify-content: center;
 }
