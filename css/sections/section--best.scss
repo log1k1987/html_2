@@ -1,0 +1,32 @@
+.section--best {
+  min-height: 650px;
+  height: 100vh;
+  background: url('../img/section--best/bg.jpg') center center no-repeat;
+  background-size: cover;
+}
+.we-best {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__title {
+    font-family: "gagalin", helvetica, sans-serif;
+        font-weight: 500;
+        font-size: 72px;
+        color: #2f3234;
+  }
+}
+
+.we-best__list {
+  display: flex;
+}
+.we-best__item {
+  flex: 1;
+}
+.we-best__item-pic {
+  display: flex;
+  justify-content: center;
+}
+.we-best__item-title,
+.we-best__item-info {
+  text-align: center;
+}

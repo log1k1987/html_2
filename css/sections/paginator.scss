@@ -2,31 +2,47 @@
   position: fixed;
   right: 3%;
   top: 10%;
+  &__item {
+    margin-bottom: 15px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 .switcher__link {
   position: relative;
-    padding: 10px;
-    width: 4px;
-    height: 4px;
+    width: 6px;
+    height: 6px;
     display: block;
+    background: #fff;
+    border-radius: 50%;
+  &:before {   
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
     background: transparent;
     border: 1px solid transparent;
     border-radius: 50%;
-  &:before {   
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    content: '';
-    position: absolute;
-    width: 6px;
-    height: 6px;
-    background: #fff;
-    border-radius: 50%;
-    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     }
     &--active {
-      border-color: #fff;
+      
+      &:before { 
+        width: 15px;
+        height: 15px;
+        border-color: #fff;
+      }
     }
 
+}
+.arrow-down {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
