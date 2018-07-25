@@ -1,36 +1,36 @@
 @font-face {
-  font-family: 'gagalinregular';
-  src: url("../../fonts/Gagalin/gagalin-regular-webfont.woff2") format("woff2"), url("../../fonts/Gagalin/gagalin-regular-webfont.woff") format("woff");
+  font-family: 'gagalin';
+  src: url("fonts/Gagalin/gagalin-regular-webfont.woff2") format("woff2"), url("fonts/Gagalin/gagalin-regular-webfont.woff") format("woff");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
   font-family: 'ubuntu';
-  src: url("../../fonts/Ubuntu/ubuntu-b-webfont.woff2") format("woff2"), url("../../fonts/Ubuntu/ubuntu-b-webfont.woff") format("woff");
+  src: url("fonts/Ubuntu/ubuntu-b-webfont.woff2") format("woff2"), url("fonts/Ubuntu/ubuntu-b-webfont.woff") format("woff");
   font-weight: 700;
   font-style: normal; }
 
 @font-face {
   font-family: 'ubuntu';
-  src: url("../../fonts/Ubuntu/ubuntu-light-webfont.woff2") format("woff2"), url("../../fonts/Ubuntu/ubuntu-light-webfont.woff") format("woff");
+  src: url("fonts/Ubuntu/ubuntu-light-webfont.woff2") format("woff2"), url("fonts/Ubuntu/ubuntu-light-webfont.woff") format("woff");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
   font-family: 'ubuntu';
-  src: url("../../fonts/Ubuntu/ubuntu-medium-webfont.woff2") format("woff2"), url("../../fonts/Ubuntu/ubuntu-medium-webfont.woff") format("woff");
+  src: url("fonts/Ubuntu/ubuntu-medium-webfont.woff2") format("woff2"), url("fonts/Ubuntu/ubuntu-medium-webfont.woff") format("woff");
   font-weight: 500;
   font-style: normal; }
 
 @font-face {
   font-family: 'ubuntu';
-  src: url("../../fonts/Ubuntu/ubuntu-regular-webfont.woff2") format("woff2"), url("../../fonts/Ubuntu/ubuntu-regular-webfont.woff") format("woff");
+  src: url("fonts/Ubuntu/ubuntu-regular-webfont.woff2") format("woff2"), url("fonts/Ubuntu/ubuntu-regular-webfont.woff") format("woff");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
-  font-family: 'lifehackmedium';
-  src: url("../../fonts/lifehack_medium-webfont.woff2") format("woff2"), url("../../fonts/lifehack_medium-webfont.woff") format("woff");
+  font-family: 'lifehack';
+  src: url("fonts/lifehack_medium-webfont.woff2") format("woff2"), url("fonts/lifehack_medium-webfont.woff") format("woff");
   font-weight: 500;
   font-style: normal; }
 
@@ -158,15 +158,30 @@ ul li {
   display: flex;
   padding-left: 20px;
   margin-bottom: 20%; }
-  .bigburger__pic {
-    margin-right: 10px; }
   .bigburger__text {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .bigburger__text-up {
+      font-family: "gagalin", helvetica, sans-serif;
+      font-weight: 500;
+      font-size: 72px;
+      color: #f9b43b; }
+    .bigburger__text-down {
+      color: #fff;
+      font-size: 50px;
+      font-family: "lifehack", helvetica, sans-serif;
+      text-transform: initial; }
 
 .arrow-down {
   display: -webkit-box;

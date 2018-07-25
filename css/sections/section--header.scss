@@ -71,13 +71,25 @@
   display: flex;
   padding-left: 20px;
   margin-bottom: 20%;
-  &__pic {
-    margin-right: 10px;
-  }
   &__text {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    &-up {
+      font-family: "gagalin", helvetica, sans-serif;
+      font-weight: 500;
+      font-size: 72px;
+      color: #f9b43b;
+    }
+    &-down {
+      color: #fff;
+      font-size: 50px;
+      font-family: "lifehack", helvetica, sans-serif;
+      text-transform: initial;
+    }
   }
+
 }
 .arrow-down {
   display: flex;
