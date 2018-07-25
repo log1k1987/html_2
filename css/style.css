@@ -84,6 +84,9 @@ ul {
 ul li {
   list-style: none; }
 
+.section {
+  min-height: 650px; }
+
 .switcher {
   position: fixed;
   right: 3%;
@@ -113,7 +116,7 @@ ul li {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
-  .switcher__link--active:before {
+  .switcher__link--active:before, .switcher__link:hover:before {
     width: 15px;
     height: 15px;
     border-color: #fff; }
@@ -133,7 +136,6 @@ ul li {
   transform: translate(-50%, -50%); }
 
 .section--header {
-  min-height: 650px;
   height: 100vh;
   background: url("../img/section--header/fon.jpg") center center no-repeat;
   background-size: cover;
@@ -280,3 +282,13 @@ ul li {
 .we-best__item-title,
 .we-best__item-info {
   text-align: center; }
+
+.reviews__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.reviews__item {
+  background-image: url("../../img/section--reviews/1.jpg"); }
