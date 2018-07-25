@@ -91,7 +91,7 @@ ul li {
   position: fixed;
   z-index: 1;
   right: 3%;
-  top: 10%; }
+  top: 12%; }
   .switcher__item {
     margin-bottom: 15px; }
     .switcher__item:last-child {
@@ -261,17 +261,28 @@ ul li {
     font-family: "gagalin", helvetica, sans-serif;
     font-weight: 500;
     font-size: 72px;
-    color: #2f3234; }
+    color: #2f3234;
+    margin-bottom: 50px; }
+  .we-best__item-pic, .we-best__item-title {
+    margin-bottom: 30px;
+    font-family: "lifehack", helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 24px; }
 
 .we-best__list {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline; }
 
 .we-best__item {
   -webkit-box-flex: 1;
   -ms-flex: 1;
-  flex: 1; }
+  flex: 1;
+  padding-left: 2%;
+  padding-right: 2%; }
 
 .we-best__item-pic {
   display: -webkit-box;
@@ -284,6 +295,10 @@ ul li {
 .we-best__item-title,
 .we-best__item-info {
   text-align: center; }
+
+.we-best__item-info {
+  color: #787776;
+  font-size: 14px; }
 
 .reviews__list {
   display: -webkit-box;
@@ -318,9 +333,8 @@ ul li {
 
 .reviews__item {
   position: relative;
-  padding: 12.5%;
+  padding: 12.5% 12.5%;
   width: 25%;
-  height: 50%;
   background-size: cover; }
 
 .reviews__description {

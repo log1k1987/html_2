@@ -13,14 +13,26 @@
         font-weight: 500;
         font-size: 72px;
         color: #2f3234;
+        margin-bottom: 50px;
   }
+  &__item-pic,
+  &__item-title {
+    margin-bottom: 30px;
+    font-family: "lifehack", helvetica, sans-serif;
+        font-weight: 500;
+        font-size: 24px;
+  }
+  
 }
 
 .we-best__list {
   display: flex;
+  align-items: baseline;
 }
 .we-best__item {
   flex: 1;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 .we-best__item-pic {
   display: flex;
@@ -29,4 +41,8 @@
 .we-best__item-title,
 .we-best__item-info {
   text-align: center;
+}
+.we-best__item-info {
+ color: #787776;
+ font-size: 14px;
 }
