@@ -1,5 +1,6 @@
 .switcher {
   position: fixed;
+  z-index: 1;
   right: 3%;
   top: 10%;
   &__item {
@@ -46,4 +47,5 @@
   top: 90%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 1;
 }
