@@ -3,3 +3,47 @@
   background: url('../img/section--delivery/bg.jpg');
   background-size: cover;
 }
+.form__content {
+  display: flex;
+  width: 100%;
+}
+.form__row {
+  display: flex;
+}
+.form__left {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.form__right {
+  flex: 1;
+}
+.form__block {
+  flex: 1;
+  margin-right: 20px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.form__block-title {
+  color: #fff;
+}
+.form__block-input {
+  display: block;
+  width: 100%;
+  background: #fff;
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: 2px solid transparent;
+  &:focus {
+    outline: none;
+    border-color: #f9b43b;
+  }
+  &--center {
+    text-align: center;
+  }
+}
+.form__choose-buttons {
+  display: flex;
+  flex-wrap: wrap;
+}
