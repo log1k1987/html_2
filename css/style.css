@@ -63,7 +63,6 @@ h1, h2, h3, h4, h5, h6, p {
   margin: 0; }
 
 .container {
-  min-height: 650px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -241,7 +240,6 @@ ul li {
       text-transform: none; }
 
 .section--best {
-  min-height: 650px;
   height: 100vh;
   background: url("../img/section--best/bg.jpg") center center no-repeat;
   background-size: cover; }
@@ -301,7 +299,6 @@ ul li {
   font-size: 14px; }
 
 .section--reviews {
-  min-height: 650px;
   height: 100vh; }
 
 .reviews__list {
@@ -309,8 +306,7 @@ ul li {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  min-height: 650px; }
+  flex-wrap: wrap; }
 
 .reviews__item--1 {
   background: url("../img/section--reviews/1.jpg") center center no-repeat; }
@@ -338,11 +334,10 @@ ul li {
 
 .reviews__item {
   position: relative;
-  padding: 12.5%;
-  width: 25vh;
+  width: 25%;
+  min-height: 325px;
   height: 50vh;
-  background-size: cover;
-  background-clip: padding-box; }
+  background-size: cover; }
 
 .reviews__description {
   overflow: hidden;
@@ -394,3 +389,8 @@ ul li {
   align-self: flex-start;
   background: #2f3234;
   border-radius: 6%; }
+
+.section--delivery {
+  height: 100vh;
+  background: url("../img/section--delivery/bg.jpg");
+  background-size: cover; }

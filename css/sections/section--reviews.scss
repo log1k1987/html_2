@@ -1,11 +1,9 @@
 .section--reviews {
-  min-height: 650px;
   height: 100vh;
 }
 .reviews__list {
   display: flex;
   flex-wrap: wrap;
-  min-height: 650px;
 }
 @each $var in (1, 2, 3, 4, 5, 6, 7, 8) {
   .reviews__item--#{$var} {
@@ -14,11 +12,10 @@
 }
 .reviews__item {
   position: relative;
-  padding: 12.5%;
-  width: 25vh;
+  width: 25%;
+  min-height: 325px;
   height: 50vh;
   background-size: cover;
-  background-clip: padding-box;
 }
 .reviews__description {
   overflow: hidden;
