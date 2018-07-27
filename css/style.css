@@ -74,7 +74,8 @@ h1, h2, h3, h4, h5, h6, p {
   -ms-flex-pack: center;
   justify-content: center;
   margin: 0 auto;
-  width: 960px; }
+  width: 960px;
+  min-height: 650px; }
 
 ul {
   padding: 0;
