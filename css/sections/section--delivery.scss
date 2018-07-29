@@ -3,17 +3,14 @@
   background: url('../img/section--delivery/bg.jpg');
   background-size: cover;
 }
+.title--delivery {
+  margin-bottom: 50px;
+}
 .form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  &__title {
-    font-family: "gagalin", helvetica, sans-serif;
-        font-weight: 500;
-        font-size: 72px;
-        color: #f9b43b;
-        margin-bottom: 50px;
-  }
+
   &__buttons {
     display: flex;
     flex-direction: column;

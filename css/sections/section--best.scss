@@ -3,17 +3,14 @@
   background: url('../img/section--best/bg.jpg') center center no-repeat;
   background-size: cover;
 }
+.title--best {
+  color: #2f3234;
+  margin-bottom: 50px;
+}
 .we-best {
   display: flex;
   flex-direction: column;
   align-items: center;
-  &__title {
-    font-family: "gagalin", helvetica, sans-serif;
-        font-weight: 500;
-        font-size: 72px;
-        color: #2f3234;
-        margin-bottom: 50px;
-  }
   &__item-pic,
   &__item-title {
     margin-bottom: 30px;

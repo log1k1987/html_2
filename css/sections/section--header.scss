@@ -66,6 +66,13 @@
     border-radius: 7px;
    }
 }
+.title {
+  font-family: "gagalin", helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 72px;
+  color: #f9b43b;
+  margin-bottom: 20px;
+}
 .bigburger {
   display: flex;
   padding-left: 20px;
@@ -77,13 +84,7 @@
     justify-content: center;
     padding-top: 10px;
     padding-left: 10px;
-    &-up {
-      font-family: "gagalin", helvetica, sans-serif;
-      font-weight: 500;
-      font-size: 72px;
-      color: #f9b43b;
-      margin-bottom: 20px;
-    }
+
     &-down {
       line-height: 1;
       color: #fff;
@@ -93,4 +94,8 @@
     }
   }
 
+}
+.arrow-down {
+  display: flex;
+  justify-content: center;
 }

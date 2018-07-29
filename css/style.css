@@ -425,21 +425,6 @@ ul li {
     height: 15px;
     border-color: #fff; }
 
-.arrow-down {
-  position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  top: 90%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  z-index: 1; }
-
 .section--header {
   height: 100vh;
   background: url("../img/section--header/fon.jpg") center center no-repeat;
@@ -508,6 +493,13 @@ ul li {
     background-color: #e45028;
     border-radius: 7px; }
 
+.title {
+  font-family: "gagalin", helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 72px;
+  color: #f9b43b;
+  margin-bottom: 20px; }
+
 .bigburger {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -530,12 +522,6 @@ ul li {
     justify-content: center;
     padding-top: 10px;
     padding-left: 10px; }
-    .bigburger__text-up {
-      font-family: "gagalin", helvetica, sans-serif;
-      font-weight: 500;
-      font-size: 72px;
-      color: #f9b43b;
-      margin-bottom: 20px; }
     .bigburger__text-down {
       line-height: 1;
       color: #fff;
@@ -543,10 +529,22 @@ ul li {
       font-family: "lifehack", helvetica, sans-serif;
       text-transform: none; }
 
+.arrow-down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
 .section--best {
   height: 100vh;
   background: url("../img/section--best/bg.jpg") center center no-repeat;
   background-size: cover; }
+
+.title--best {
+  color: #2f3234;
+  margin-bottom: 50px; }
 
 .we-best {
   display: -webkit-box;
@@ -559,12 +557,6 @@ ul li {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
-  .we-best__title {
-    font-family: "gagalin", helvetica, sans-serif;
-    font-weight: 500;
-    font-size: 72px;
-    color: #2f3234;
-    margin-bottom: 50px; }
   .we-best__item-pic, .we-best__item-title {
     margin-bottom: 30px;
     font-family: "lifehack", helvetica, sans-serif;
@@ -699,6 +691,9 @@ ul li {
   background: url("../img/section--delivery/bg.jpg");
   background-size: cover; }
 
+.title--delivery {
+  margin-bottom: 50px; }
+
 .form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -710,12 +705,6 @@ ul li {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
-  .form__title {
-    font-family: "gagalin", helvetica, sans-serif;
-    font-weight: 500;
-    font-size: 72px;
-    color: #f9b43b;
-    margin-bottom: 50px; }
   .form__buttons {
     display: -webkit-box;
     display: -ms-flexbox;
