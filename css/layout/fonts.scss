@@ -1,46 +1,40 @@
 @font-face {
   font-family: 'gagalin';
-  src: url('/fonts/Gagalin/gagalin-regular-webfont.woff2') format ('woff2'), 
-       ('/fonts/Gagalin/gagalin-regular-webfont.woff') format ('woff');
+  src: url("../fonts/Gagalin/gagalin.woff2") format("woff2"), url("../fonts/Gagalin/gagalin.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: 'ubuntu';
-  src: '/fonts/Ubuntu/ubuntu-b-webfont.woff2' format('woff2'),
-       '/fonts/Ubuntu/ubuntu-b-webfont.woff' format('woff');
+  src: url('../fonts/Ubuntu/UbuntuB.woff2') format('woff2'), url('../fonts/Ubuntu/UbuntuB.woff') format('woff');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'ubuntu';
-  src: '/fonts/Ubuntu/ubuntu-light-webfont.woff2' format('woff2'),
-       '/fonts/Ubuntu/ubuntu-light-webfont.woff' format('woff');
+  src: url('../fonts/Ubuntu/UbuntuLight.woff2') format('woff2'), url('../fonts/Ubuntu/UbuntuLight.woff') format('woff');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'ubuntu';
-  src: '/fonts/Ubuntu/ubuntu-medium-webfont.woff2' format('woff2'),
-       '/fonts/Ubuntu/ubuntu-medium-webfont.woff' format('woff');
+  src: url('../fonts/Ubuntu/UbuntuMedium.woff2') format('woff2'), url('../fonts/Ubuntu/UbuntuMedium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'ubuntu';
-  src: '/fonts/Ubuntu/ubuntu-regular-webfont.woff2' format('woff2'),
-       '/fonts/Ubuntu/ubuntu-regular-webfont.woff' format('woff');
+  src: url('../fonts/Ubuntu/UbuntuRegular.woff2') format('woff2'), url('../fonts/Ubuntu/UbuntuRegular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'lifehack';
-  src: '/fonts/lifehack_medium-webfont.woff2' format('woff2'),
-       '/fonts/lifehack_medium-webfont.woff' format('woff');
+  src: url("../fonts/lifehack.woff2") format("woff2"), url("../fonts/lifehack.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
