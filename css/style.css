@@ -303,7 +303,7 @@ template {
 
 @font-face {
   font-family: 'gagalin';
-  src: "/fonts/Gagalin/gagalin-regular-webfont.woff2" format("woff2"), "/fonts/Gagalin/gagalin-regular-webfont.woff" format("woff");
+  src: url("/fonts/Gagalin/gagalin-regular-webfont.woff2") format "woff2", "/fonts/Gagalin/gagalin-regular-webfont.woff" format "woff";
   font-weight: 400;
   font-style: normal; }
 
@@ -388,7 +388,8 @@ ul li {
   list-style: none; }
 
 .section {
-  min-height: 650px; }
+  min-height: 650px;
+  height: 100vh; }
 
 .switcher {
   position: fixed;
@@ -426,7 +427,6 @@ ul li {
     border-color: #fff; }
 
 .section--header {
-  height: 100vh;
   background: url("../img/section--header/fon.jpg") center center no-repeat;
   background-size: cover;
   font-size: 13px;
@@ -538,7 +538,6 @@ ul li {
   justify-content: center; }
 
 .section--best {
-  height: 100vh;
   background: url("../img/section--best/bg.jpg") center center no-repeat;
   background-size: cover; }
 
@@ -593,9 +592,6 @@ ul li {
 .we-best__item-info {
   color: #787776;
   font-size: 14px; }
-
-.section--reviews {
-  height: 100vh; }
 
 .reviews__list {
   display: -webkit-box;
@@ -687,7 +683,6 @@ ul li {
   border-radius: 6%; }
 
 .section--delivery {
-  height: 100vh;
   background: url("../img/section--delivery/bg.jpg");
   background-size: cover; }
 
