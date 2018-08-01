@@ -3,17 +3,12 @@
   display: flex;
   flex-wrap: wrap;
 }
-@each $var in (1, 2, 3, 4, 5, 6, 7, 8) {
-  .reviews__item--#{$var} {
-    background: url('../img/section--reviews/#{$var}.jpg') center center no-repeat;
-  }
-}
+
 .reviews__item {
   position: relative;
   width: 25%;
   min-height: 325px;
   height: 50vh;
-  background-size: cover;
 }
 .reviews__description {
   overflow: hidden;

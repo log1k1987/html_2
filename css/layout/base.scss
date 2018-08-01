@@ -16,7 +16,7 @@ body {
   flex-direction: column;
   min-height: 100%;
   overflow: hidden;
-  min-width: 980px;
+  min-width: 960px;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -26,9 +26,11 @@ h1, h2, h3, h4, h5, h6, p {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin: 0 auto;
-  width: 960px;
-  min-height: 650px;
+  width: 940px;
+  height: 100%;
+  position: relative;
 }
 
 ul {

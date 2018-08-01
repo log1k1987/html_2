@@ -6,10 +6,14 @@
   font-family: "ubuntu", helvetica, sans-serif;
   font-weight: bold;
 }
+.container--header {
+  justify-content: flex-start;
+}
 .header {
   display: flex;
   margin-bottom: 42px;
   padding-top: 10px;
+  width: 100%;
 }
 .header__col-left {
   margin-right: auto;
@@ -75,12 +79,11 @@
 .bigburger {
   display: flex;
   padding-left: 20px;
-  margin-bottom: 20%;
+  flex: 0.8;
+  align-items: center;
   &__text {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
     padding-top: 10px;
     padding-left: 10px;
 
@@ -95,6 +98,6 @@
 
 }
 .arrow-down {
-  display: flex;
-  justify-content: center;
+  position: absolute;
+  bottom: 2rem;
 }
