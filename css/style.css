@@ -636,22 +636,94 @@ ul {
   background: #2f3234;
   opacity: .93;
   width: 50%;
-  height: 100%; }
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.team-right__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 70%; }
+
+.accordeon__item {
+  color: #fff;
+  margin-bottom: 40px; }
+  .accordeon__item:last-child {
+    margin-bottom: 0; }
 
 .accordeon__link {
+  color: inherit;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: end;
   -ms-flex-align: end;
-  align-items: flex-end; }
+  align-items: flex-end;
+  font-family: "gagalin", helvetica, sans-serif;
+  margin-bottom: 15px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
   .accordeon__link:before {
     display: block;
     content: "";
     border: 7px solid #f9b43b;
     border-right-color: transparent;
     border-left-color: transparent;
-    border-bottom-color: transparent; }
+    border-bottom-color: transparent;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    margin-right: 10px; }
+  .accordeon__link--active {
+    color: #f9b43b; }
+    .accordeon__link--active ~ .hidden-block {
+      height: initial;
+      overflow: visible; }
+    .accordeon__link--active:before {
+      -webkit-transform-origin: 50% 25% 0;
+      -ms-transform-origin: 50% 25% 0;
+      transform-origin: 50% 25% 0;
+      -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+      transform: rotate(-180deg); }
+
+.hidden-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 0;
+  overflow: hidden; }
+
+.hidden-block__ava {
+  margin-right: 20px; }
+
+.hidden-block__pic {
+  border-radius: 50%; }
+
+.hidden-block__info-title {
+  margin-bottom: 20px; }
+
+.hidden-block__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
 
 .reviews__list {
   display: -webkit-box;
