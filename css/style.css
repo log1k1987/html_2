@@ -701,6 +701,9 @@ ul {
       -ms-transform: rotate(-180deg);
       transform: rotate(-180deg); }
 
+.accordeon__item:last-child .accordeon__link {
+  margin-bottom: 0; }
+
 .hidden-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -993,7 +996,9 @@ ul {
 
 .phone {
   color: #e45028;
-  font-weight: 700; }
+  font-weight: 700;
+  -ms-flex-item-align: start;
+  align-self: flex-start; }
 
 .footer__col--right {
   -webkit-box-flex: 1;

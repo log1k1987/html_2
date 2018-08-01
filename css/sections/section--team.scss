@@ -44,6 +44,7 @@
     transition: 0.3s;
     margin-right: 10px;
   }
+
   &--active {
     color: #f9b43b;
     & ~ .hidden-block {
@@ -55,10 +56,10 @@
       transform: rotate(-180deg);
     }
   }
-
-
 }
-
+.accordeon__item:last-child .accordeon__link {
+  margin-bottom: 0;
+}
 
 
 
