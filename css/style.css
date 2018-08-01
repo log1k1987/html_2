@@ -387,9 +387,10 @@ h1, h2, h3, h4, h5, h6, p {
 ul {
   padding: 0;
   margin: 0; }
-
-ul li {
-  list-style: none; }
+  ul li {
+    list-style: none; }
+    ul li a {
+      text-decoration: none; }
 
 .section {
   min-height: 650px;
@@ -622,6 +623,22 @@ ul li {
   font-size: 14px;
   text-align: center;
   font-weight: 300; }
+
+.section--team {
+  background: url("../img/section--team/bg.jpg");
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+
+.team-right {
+  background: #2f3234;
+  opacity: .93;
+  width: 50%;
+  height: 100%; }
 
 .reviews__list {
   display: -webkit-box;

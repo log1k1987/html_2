@@ -36,10 +36,14 @@ h1, h2, h3, h4, h5, h6, p {
 ul {
   padding: 0;
   margin: 0;
+  & li {
+    list-style: none;
+    & a {
+      text-decoration: none;
+    }
+  }
 }
-ul li {
-  list-style: none;
-}
+ 
 .section {
   min-height: 650px;
   height: 100vh;
