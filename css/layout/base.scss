@@ -23,6 +23,9 @@ body {
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
+a {
+  text-decoration: none;
+}
 .container {
   display: flex;
   flex-direction: column;
@@ -39,9 +42,6 @@ ul {
   margin: 0;
   & li {
     list-style: none;
-    & a {
-      text-decoration: none;
-    }
   }
 }
  

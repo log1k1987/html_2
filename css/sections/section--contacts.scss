@@ -1,0 +1,30 @@
+.section--contacts {
+  background: url('../img/section--contacts/bg.jpg') center center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  width: 100%;
+  background: url('../img/section--contacts/foot.jpg') center center / cover no-repeat;
+}
+.container--footer {
+  flex-direction: row;
+}
+.footer__col--left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.footer__col--right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.socials__list {
+  display: flex;
+}
