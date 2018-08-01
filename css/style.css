@@ -344,7 +344,8 @@ body {
   font-family: "ubuntu", helvetica, sans-serif;
   margin: 0;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.42; }
 
 * {
   -webkit-box-sizing: border-box;
@@ -627,18 +628,30 @@ ul {
 .section--team {
   background: url("../img/section--team/bg.jpg");
   background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end; }
+  position: relative; }
 
 .team-right {
+  position: absolute;
+  right: 0;
   background: #2f3234;
   opacity: .93;
   width: 50%;
   height: 100%; }
+
+.accordeon__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end; }
+  .accordeon__link:before {
+    display: block;
+    content: "";
+    border: 7px solid #f9b43b;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: transparent; }
 
 .reviews__list {
   display: -webkit-box;
