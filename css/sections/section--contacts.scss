@@ -19,6 +19,11 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  color: #fff;
+}
+.phone {
+  color: #e45028;
+  font-weight: 700;
 }
 .footer__col--right {
   flex: 1;
@@ -27,4 +32,24 @@
 }
 .socials__list {
   display: flex;
+}
+.socials__item {
+  margin-right: 10px;
+}
+.socials__link {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+.socials__link--vk {
+  background: url('../img/socials/vk.png') center center no-repeat;
+}
+.socials__link--fb {
+  background: url('../img/socials/fb.png') center center no-repeat;
+}
+.socials__link--inst {
+  background: url('../img/socials/inst.png') center center no-repeat;
+}
+.socials__link--tw {
+  background: url('../img/socials/tw.png') center center no-repeat;
 }

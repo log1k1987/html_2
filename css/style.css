@@ -988,7 +988,12 @@ ul {
   flex-direction: column;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
-  justify-content: flex-start; }
+  justify-content: flex-start;
+  color: #fff; }
+
+.phone {
+  color: #e45028;
+  font-weight: 700; }
 
 .footer__col--right {
   -webkit-box-flex: 1;
@@ -1005,5 +1010,25 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+
+.socials__item {
+  margin-right: 10px; }
+
+.socials__link {
+  display: block;
+  width: 20px;
+  height: 20px; }
+
+.socials__link--vk {
+  background: url("../img/socials/vk.png") center center no-repeat; }
+
+.socials__link--fb {
+  background: url("../img/socials/fb.png") center center no-repeat; }
+
+.socials__link--inst {
+  background: url("../img/socials/inst.png") center center no-repeat; }
+
+.socials__link--tw {
+  background: url("../img/socials/tw.png") center center no-repeat; }
 
 /*# sourceMappingURL=style.css.map */
