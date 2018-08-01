@@ -50,3 +50,17 @@
   }
 }
 }
+.btn {
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  padding: 8px 15px;
+  background-color: #e45028;
+  border-radius: 7px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.btn--reviews {
+  align-self: flex-start;
+  background: #2f3234;
+}

@@ -445,6 +445,21 @@ ul li {
     border-color: #fff;
     opacity: 1; }
 
+.btn {
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  padding: 8px 15px;
+  background-color: #e45028;
+  border-radius: 7px;
+  text-transform: uppercase;
+  font-weight: 700; }
+
+.btn--reviews {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  background: #2f3234; }
+
 .section--header {
   background: url("../img/section--header/fon.jpg") center center no-repeat;
   background-size: cover;
@@ -510,13 +525,6 @@ ul li {
 
 .order-header {
   margin-right: 20px; }
-  .order-header__link {
-    color: #fff;
-    display: block;
-    text-decoration: none;
-    padding: 10px 15px;
-    background-color: #e45028;
-    border-radius: 7px; }
 
 .title {
   font-family: "gagalin", helvetica, sans-serif;
@@ -665,19 +673,6 @@ ul li {
   color: #fff;
   margin-bottom: 20px;
   font-weight: 300; }
-
-.reviews__description-link {
-  font-weight: 500;
-  color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
-  line-height: 100%;
-  display: block;
-  padding: 10px;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
-  background: #2f3234;
-  border-radius: 6%; }
 
 .section--delivery {
   background: url("../img/section--delivery/bg.jpg");
@@ -846,7 +841,6 @@ ul li {
   display: -ms-flexbox;
   display: flex; }
 
-.form__choose-send,
 .form__choose-clear {
   padding: 10px 15px;
   line-height: 100%;
@@ -855,11 +849,6 @@ ul li {
   border-radius: 7px;
   color: #fff;
   outline: none; }
-
-.form__choose-send {
-  background: #e45028;
-  text-transform: uppercase;
-  font-weight: 700; }
 
 .form__choose-clear {
   background: transparent; }

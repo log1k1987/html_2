@@ -139,7 +139,6 @@
   display: flex;
 }
 
-.form__choose-send,
 .form__choose-clear {
   padding: 10px 15px;
   line-height: 100%;
@@ -149,11 +148,7 @@
   color: #fff;
   outline: none;
 }
-.form__choose-send {
-  background: #e45028;
-  text-transform: uppercase;
-  font-weight: 700;
-}
+
 .form__choose-clear {
   background: transparent;
 }
