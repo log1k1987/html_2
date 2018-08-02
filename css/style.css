@@ -633,6 +633,7 @@ ul {
 
 .team-right {
   position: absolute;
+  top: 0;
   right: 0;
   background: #2f3234;
   opacity: .93;
@@ -728,6 +729,41 @@ ul {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column; }
+
+.section--menu {
+  background: url("../img/section--menu/bg.jpg");
+  background-size: cover;
+  position: relative; }
+
+.menu-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #2f3234;
+  opacity: .6;
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.accordeon-y {
+  height: 100%; }
+
+.accordeon-y__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%; }
+
+.accordeon-y__link {
+  display: block;
+  height: 100%;
+  -webkit-writing-mode: tb-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: tb-rl;
+  font-size: 30px;
+  color: #fff; }
 
 .reviews__list {
   display: -webkit-box;

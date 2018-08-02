@@ -1,0 +1,29 @@
+.section--menu {
+  background: url('../img/section--menu/bg.jpg');
+  background-size: cover;
+  position: relative;
+}
+.menu-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #2f3234;
+  opacity: .6;
+  width: 50%;
+  height: 100%;
+  display: flex;
+}
+.accordeon-y {
+  height: 100%;
+}
+.accordeon-y__list {
+  display: flex;
+  height: 100%;
+}
+.accordeon-y__link {
+ display: block;
+ height: 100%;
+ writing-mode: tb-rl;
+ font-size: 30px;
+ color: #fff;
+}
