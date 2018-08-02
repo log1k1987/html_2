@@ -754,16 +754,13 @@ ul {
   height: 100%;
   top: 0;
   right: 0;
-  width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end; }
+  width: 50%; }
 
 .menu-right__content {
-  height: 100%; }
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0; }
 
 .accordeon-y {
   height: 100%; }

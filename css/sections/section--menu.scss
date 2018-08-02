@@ -23,11 +23,12 @@
   top: 0;
   right: 0;
   width: 50%;
-  display: flex;
-  justify-content: flex-end;
 }
 .menu-right__content {
   height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 .accordeon-y {
   height: 100%;
