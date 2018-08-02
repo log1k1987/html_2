@@ -740,7 +740,6 @@ ul {
   top: 0;
   right: 0;
   background: #2f3234;
-  opacity: .6;
   width: 50%;
   height: 100%;
   display: -webkit-box;
@@ -756,14 +755,33 @@ ul {
   display: flex;
   height: 100%; }
 
+.accordeon-y__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.accordeon-y__text {
+  color: #fff;
+  width: 0;
+  overflow: hidden; }
+
 .accordeon-y__link {
+  line-height: 100%;
+  text-align: center;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  font-family: "gagalin", helvetica, sans-serif;
+  font-weight: 500;
   display: block;
-  height: 100%;
   -webkit-writing-mode: tb-rl;
   -ms-writing-mode: tb-rl;
   writing-mode: tb-rl;
-  font-size: 30px;
+  font-size: 40px;
   color: #fff; }
+  .accordeon-y__link--active ~ .accordeon-y__text {
+    width: initial;
+    overflow: visible; }
 
 .reviews__list {
   display: -webkit-box;
