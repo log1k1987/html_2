@@ -56,14 +56,14 @@
   font-weight: 500;
   display: block;
   writing-mode: tb-rl;
-  font-size: 40px;
+  font-size: 2.5rem;
   color: #fff;
  &--active {
   color: #f9b43b;
   & ~ .accordeon-y__text {
     width: initial;
     overflow: visible;
-    padding: 20px 30px;
+    padding: 1.25rem 1.875rem;
   }
  }
 }

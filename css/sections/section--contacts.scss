@@ -6,8 +6,8 @@
 .footer {
   position: absolute;
   bottom: 0;
-  padding-bottom: 10px;
-  padding-top: 10px;
+  padding-bottom: 0.625rem;
+  padding-top: 0.625rem;
   width: 100%;
   background: url('../img/section--contacts/foot.jpg') center center / cover no-repeat;
 }
@@ -35,12 +35,12 @@
   display: flex;
 }
 .socials__item {
-  margin-right: 10px;
+  margin-right: 0.625rem;
 }
 .socials__link {
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
 }
 .socials__link--vk {
   background: url('../img/socials/vk.png') center center no-repeat;

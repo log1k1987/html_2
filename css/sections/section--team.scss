@@ -22,7 +22,7 @@
 }
 .accordeon__item {
   color: #fff;
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
   &:last-child {
     margin-bottom: 0;
   }
@@ -33,17 +33,17 @@
   display: flex;
   align-items: flex-end;
   font-family: "gagalin", helvetica, sans-serif;
-  margin-bottom: 15px;
+  margin-bottom: 0.9375rem;
   transition: 0.3s;
   &:before {
     display: block;
     content: "";
-    border: 7px solid #f9b43b;
+    border: 0.4275rem solid #f9b43b;
     border-right-color: transparent;
     border-left-color: transparent;
     border-bottom-color: transparent;
     transition: 0.3s;
-    margin-right: 10px;
+    margin-right: 0.625rem;
   }
 
   &--active {
@@ -70,13 +70,13 @@
   overflow: hidden;
 }
 .hidden-block__ava {
-  margin-right: 20px;
+  margin-right: 1.25rem;
 }
 .hidden-block__pic {
   border-radius: 50%;
 }
 .hidden-block__info-title {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 .hidden-block__info {
   display: flex;

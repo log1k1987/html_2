@@ -1,7 +1,7 @@
 .section--header {
   background: url('../img/section--header/fon.jpg') center center no-repeat;
   background-size: cover;
-  font-size: 13px;
+  font-size: 0.8125rem;
   text-transform: uppercase;
   font-family: "ubuntu", helvetica, sans-serif;
   font-weight: bold;
@@ -11,8 +11,7 @@
 }
 .header {
   display: flex;
-  margin-bottom: 42px;
-  padding-top: 10px;
+  padding-top: 0.625rem;
   width: 100%;
 }
 .header__col-left {
@@ -26,7 +25,7 @@
   align-items: center;
 }
 .menu {
-  margin-right: 11px;
+  margin-right: 0.6875rem;
   &__list {
     display: flex;
   }
@@ -38,11 +37,11 @@
     }
   
     &:after {
-      margin: 0 15px;
+      margin: 0 0.9375rem;
       content: "";
       display: block;
-      width: 4px;
-      height: 4px;
+      width: 0.25rem;
+      height: 0.25rem;
       border-radius: 50%;
       background: #fff;
     }
@@ -57,31 +56,29 @@
 
 
 
-.order-header {
-  margin-right: 20px;
-}
+
 .title {
   font-family: "gagalin", helvetica, sans-serif;
   font-weight: 500;
-  font-size: 72px;
+  font-size: 4.5rem;
   color: #f9b43b;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 .bigburger {
   display: flex;
-  padding-left: 20px;
+  padding-left: 1.25rem;
   flex: 0.8;
   align-items: center;
   &__text {
     display: flex;
     flex-direction: column;
-    padding-top: 10px;
-    padding-left: 10px;
+    padding-top: 0.625rem;
+    padding-left: 0.625rem;
 
     &-down {
       line-height: 1;
       color: #fff;
-      font-size: 60px;
+      font-size: 3.75rem;
       font-family: "lifehack", helvetica, sans-serif;
       text-transform: none;
     }
