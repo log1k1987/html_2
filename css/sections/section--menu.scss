@@ -5,9 +5,17 @@
 }
 .menu-left {
   width: 50%;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
+}
+.title--menu {
+  display: block;
+  position: absolute;
+  left: 20%;
+  top: 13%;
+  color: #fff;
 }
 .menu-right {
   position: absolute;
@@ -35,6 +43,7 @@
   height: 100%;
   color: #fff;
   background: #2f3234;
+  opacity: .93;
   width: 0;
   overflow: hidden;
 }
@@ -49,6 +58,7 @@
   font-size: 40px;
   color: #fff;
  &--active {
+  color: #f9b43b;
   & ~ .accordeon-y__text {
     width: initial;
     overflow: visible;
