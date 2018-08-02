@@ -805,7 +805,8 @@ ul {
     color: #f9b43b; }
     .accordeon-y__link--active ~ .accordeon-y__text {
       width: initial;
-      overflow: visible; }
+      overflow: visible;
+      padding: 20px 30px; }
 
 .reviews__list {
   display: -webkit-box;
