@@ -1,0 +1,110 @@
+@media screen and (max-width: 1200px) {   //desctop
+
+}
+@media screen and (max-width: 992px) {  //laptop
+  
+}
+@media screen and (max-width: 768px) {  //планшет
+  .wrapper {
+    min-width: 500px;
+  }
+  .container {
+    width: 480px;
+  }
+
+  .bigburger {
+    flex-wrap: wrap;
+    &__text {
+       text-align: center;
+    }
+  
+  }
+  .arrow-down {
+    bottom: 1rem;
+  }
+  .team-right {
+    width: 100%;
+  }
+  .team-right__content {
+    align-items: center;
+  }
+  .accordeon__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hidden-block {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .hidden-block__ava {
+    margin-right: 0;
+  }
+  .hidden-block__info-text {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.reviews__item {
+  width: 50%;
+  min-height: initial;
+  height: 25vh;
+}
+.title--delivery {
+  text-align: center;
+  font-size: 3.2rem;
+}
+.form__content {
+  flex-wrap: wrap;
+}
+.form__left {
+  margin-right: 0;
+  width: 100%;
+  flex: initial;
+}
+}
+@media screen and (max-width: 480px) {   //телефон
+  .wrapper {
+    min-width: 97%;
+  }
+  .container {
+    width: 95%;
+  }
+  .we-best__list {
+    flex-direction: column;
+
+}
+.we-best__item {
+  display: flex;
+}
+.title--menu {
+  left: 10%;
+}
+.title--best {
+  text-align: center;
+}
+
+.form__row:last-child .form__block {
+  margin-right: 0;
+  margin-left: 1.25rem;
+  &:first-child {
+    margin-left: 0;
+  }
+  &:last-child {
+    display: none;
+  }
+
+}
+.form__buttons {
+  align-items: center;
+}
+.form__choose-buttons {
+  justify-content: center;
+}
+.container--footer {
+flex-direction: column; 
+}
+.phone {
+  align-self: center;
+}
+}
