@@ -340,6 +340,9 @@ template {
 html, body {
   height: 100%; }
 
+html {
+  font-size: 16px; }
+
 body {
   font-family: "ubuntu", helvetica, sans-serif;
   margin: 0;
@@ -779,18 +782,15 @@ ul {
   overflow: hidden; }
 
 .accordeon-y__link {
-  line-height: 200%;
-  min-width: 5rem;
-  padding-top: 2.5rem;
+  padding: 2.5rem 0.5rem;
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
   font-family: "gagalin", helvetica, sans-serif;
   font-weight: 500;
-  display: block;
-  -webkit-writing-mode: tb-rl;
-  -ms-writing-mode: tb-rl;
-  writing-mode: tb-rl;
+  -webkit-writing-mode: tb;
+  -ms-writing-mode: tb;
+  writing-mode: tb;
   font-size: 2.5rem;
   color: #fff; }
   .accordeon-y__link--active {
@@ -1107,7 +1107,15 @@ ul {
 .socials__link--tw {
   background: url("../img/socials/tw.png") center center no-repeat; }
 
+@media screen and (max-width: 992px) {
+  .wrapper {
+    min-width: 760px; }
+  .container {
+    max-width: 740px; } }
+
 @media screen and (max-width: 768px) {
+  html {
+    font-size: 14px; }
   .wrapper {
     min-width: 500px; }
   .container {
@@ -1159,7 +1167,7 @@ ul {
     height: 25%; }
   .title--delivery {
     text-align: center;
-    font-size: 3.2rem; }
+    font-size: 3.57rem; }
   .form__content {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }

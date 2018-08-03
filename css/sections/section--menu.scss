@@ -49,14 +49,11 @@
   overflow: hidden;
 }
 .accordeon-y__link {
-  line-height: 200%;
-  min-width: 5rem;
-  padding-top: 2.5rem;
+  padding: 2.5rem 0.5rem;
   transform: rotate(180deg);
   font-family: "gagalin", helvetica, sans-serif;
   font-weight: 500;
-  display: block;
-  writing-mode: tb-rl;
+  writing-mode: tb;
   font-size: 2.5rem;
   color: #fff;
  &--active {

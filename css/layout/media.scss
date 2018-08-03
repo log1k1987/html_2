@@ -1,10 +1,18 @@
 @media screen and (max-width: 1200px) {   //desctop
-
+ 
 }
 @media screen and (max-width: 992px) {  //laptop
-  
+  .wrapper {
+    min-width: 760px;
+  }
+  .container {
+    max-width: 740px;
+  }
 }
 @media screen and (max-width: 768px) {  //планшет
+  html {
+    font-size: 14px;
+  }
   .wrapper {
     min-width: 500px;
   }
@@ -53,11 +61,12 @@
 }
 .title--delivery {
   text-align: center;
-  font-size: 3.2rem;
+  font-size: 3.57rem;
 }
 .form__content {
   flex-wrap: wrap;
 }
+
 .form__left {
   margin-right: 0;
   width: 100%;
