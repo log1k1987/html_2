@@ -65,6 +65,9 @@
 }
 }
 @media screen and (max-width: 480px) {   //телефон
+html {
+  font-size: 13px;
+}
   .wrapper {
     min-width: 97%;
   }

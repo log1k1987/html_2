@@ -1171,6 +1171,8 @@ ul {
     flex: initial; } }
 
 @media screen and (max-width: 480px) {
+  html {
+    font-size: 13px; }
   .wrapper {
     min-width: 97%; }
   .container {
