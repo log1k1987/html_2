@@ -782,8 +782,8 @@ ul {
   overflow: hidden; }
 
 .accordeon-y__link {
-  padding: 2.5rem 0.5rem;
-  width: 5rem;
+  padding-top: 2.5rem;
+  line-height: 200%;
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
@@ -798,7 +798,7 @@ ul {
       overflow: visible;
       padding: 1.25rem 1.875rem; }
 
-.accordeon-y__link div {
+.accordeon-y__link h4 {
   -webkit-writing-mode: tb;
   -ms-writing-mode: tb;
   writing-mode: tb; }

@@ -10,17 +10,17 @@
   }
 }
 @media screen and (max-width: 768px) {  //планшет
-  html {
+html {
     font-size: 14px;
-  }
-  .wrapper {
+}
+.wrapper {
     min-width: 500px;
-  }
-  .container {
+}
+.container {
     max-width: 480px;
-  }
+}
 
-  .bigburger {
+.bigburger {
     flex-wrap: wrap;
     justify-content: center;
     &__text {
