@@ -783,14 +783,12 @@ ul {
 
 .accordeon-y__link {
   padding: 2.5rem 0.5rem;
+  width: 5rem;
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
   font-family: "gagalin", helvetica, sans-serif;
   font-weight: 500;
-  -webkit-writing-mode: tb;
-  -ms-writing-mode: tb;
-  writing-mode: tb;
   font-size: 2.5rem;
   color: #fff; }
   .accordeon-y__link--active {
@@ -799,6 +797,11 @@ ul {
       width: initial;
       overflow: visible;
       padding: 1.25rem 1.875rem; }
+
+.accordeon-y__link div {
+  -webkit-writing-mode: tb;
+  -ms-writing-mode: tb;
+  writing-mode: tb; }
 
 .reviews {
   height: 100%; }

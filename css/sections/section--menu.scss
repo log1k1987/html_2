@@ -50,10 +50,10 @@
 }
 .accordeon-y__link {
   padding: 2.5rem 0.5rem;
+  width: 5rem;
   transform: rotate(180deg);
   font-family: "gagalin", helvetica, sans-serif;
   font-weight: 500;
-  writing-mode: tb;
   font-size: 2.5rem;
   color: #fff;
  &--active {
@@ -64,4 +64,7 @@
     padding: 1.25rem 1.875rem;
   }
  }
+}
+.accordeon-y__link div {
+  writing-mode: tb;
 }
