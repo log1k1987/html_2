@@ -595,9 +595,7 @@ ul {
   align-items: baseline; }
 
 .we-best__item {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+  width: 33.33%;
   padding-left: 2%;
   padding-right: 2%; }
 
@@ -1185,7 +1183,8 @@ ul {
   .we-best__item {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    width: 100%; }
   .title--menu {
     left: 10%; }
   .title--best {
