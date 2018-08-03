@@ -384,7 +384,7 @@ a {
   -ms-flex-align: center;
   align-items: center;
   margin: 0 auto;
-  width: 940px;
+  max-width: 940px;
   height: 100%;
   position: relative; }
 
@@ -1113,10 +1113,13 @@ ul {
   .wrapper {
     min-width: 500px; }
   .container {
-    width: 480px; }
+    max-width: 480px; }
   .bigburger {
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
     .bigburger__text {
       text-align: center; }
   .arrow-down {
@@ -1173,7 +1176,7 @@ ul {
   .wrapper {
     min-width: 97%; }
   .container {
-    width: 95%; }
+    max-width: 95%; }
   .we-best__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1207,6 +1210,9 @@ ul {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column; }
+  .adress {
+    text-align: center;
+    font-size: 0.875rem; }
   .phone {
     -ms-flex-item-align: center;
     align-self: center; } }

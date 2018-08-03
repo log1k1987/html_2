@@ -9,11 +9,12 @@
     min-width: 500px;
   }
   .container {
-    width: 480px;
+    max-width: 480px;
   }
 
   .bigburger {
     flex-wrap: wrap;
+    justify-content: center;
     &__text {
        text-align: center;
     }
@@ -68,7 +69,7 @@
     min-width: 97%;
   }
   .container {
-    width: 95%;
+    max-width: 95%;
   }
   .we-best__list {
     flex-direction: column;
@@ -103,6 +104,10 @@
 }
 .container--footer {
 flex-direction: column; 
+}
+.adress {
+  text-align: center;
+  font-size: 0.875rem;
 }
 .phone {
   align-self: center;
