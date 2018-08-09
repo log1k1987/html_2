@@ -14,6 +14,9 @@ html {
 .container {
   max-width: 95%;
 }
+.nav {
+  display: none;
+}
 .hamburger-menu-link {
 display: inline-flex;
 }
@@ -87,6 +90,9 @@ display: inline-flex;
 @media screen and (max-width: 480px) {   //телефон
 html {
   font-size: 12px;
+}
+.bigburger__left {
+  width: 24rem;
 }
   .wrapper {
     min-width: 97%;

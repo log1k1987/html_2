@@ -1285,6 +1285,8 @@ ul {
     min-width: 97%; }
   .container {
     max-width: 95%; }
+  .nav {
+    display: none; }
   .hamburger-menu-link {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -1368,6 +1370,8 @@ ul {
 @media screen and (max-width: 480px) {
   html {
     font-size: 12px; }
+  .bigburger__left {
+    width: 24rem; }
   .wrapper {
     min-width: 97%; }
   .container {
