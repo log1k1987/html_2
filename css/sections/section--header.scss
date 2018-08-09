@@ -23,6 +23,9 @@
 .header__col-right {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  padding-left: 1rem;
+  justify-content: flex-end;
 }
 .menu {
   margin-right: 0.6875rem;

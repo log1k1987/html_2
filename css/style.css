@@ -447,8 +447,8 @@ ul {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
   .nav__link--active:before, .nav__link:hover:before {
-    width: 0.93rem;
-    height: 0.93rem;
+    width: 1rem;
+    height: 1rem;
     border-color: #fff;
     opacity: 1; }
 
@@ -466,6 +466,44 @@ ul {
   -ms-flex-item-align: start;
   align-self: flex-start;
   background: #2f3234; }
+
+.menu-full {
+  background: #2f3234;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: none; }
+
+.menu-full__item {
+  margin-bottom: 1rem;
+  position: relative; }
+  .menu-full__item:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0.3rem;
+    height: 0.3rem;
+    border-radius: 50%;
+    background: #fff;
+    left: 50%;
+    bottom: -50%; }
+  .menu-full__item:last-child:after {
+    content: none; }
+
+.menu-full__link {
+  color: #fff; }
 
 .section--header {
   background: url("../img/section--header/fon.jpg") center center no-repeat;
@@ -499,7 +537,13 @@ ul {
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-left: 1rem;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
 
 .menu {
   margin-right: 0.6875rem; }
