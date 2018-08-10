@@ -73,6 +73,17 @@ display: inline-flex;
   min-height: initial;
   height: 25%;
 }
+.reviews__description {
+  padding: 5% 5%;
+  text-align: center;
+  align-items: center;
+}
+.reviews__description-title {
+margin-bottom: 1rem;
+}
+.btn--reviews {
+  align-self: center;
+}
 .title--delivery {
   text-align: center;
   font-size: 3.57rem;
