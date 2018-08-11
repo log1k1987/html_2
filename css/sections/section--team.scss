@@ -50,7 +50,6 @@
     color: #f9b43b;
     & ~ .hidden-block {
       height: initial;
-      overflow: visible;
     }
     &:before {
       transform-origin: 50% 25% 0;
@@ -58,9 +57,7 @@
     }
   }
 }
-.accordeon__item:last-child .accordeon__link {
-  margin-bottom: 0;
-}
+
 
 
 

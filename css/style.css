@@ -782,8 +782,7 @@ ul {
   .accordeon__link--active {
     color: #f9b43b; }
     .accordeon__link--active ~ .hidden-block {
-      height: initial;
-      overflow: visible; }
+      height: initial; }
     .accordeon__link--active:before {
       -webkit-transform-origin: 50% 25% 0;
       -ms-transform-origin: 50% 25% 0;
@@ -791,9 +790,6 @@ ul {
       -webkit-transform: rotate(-180deg);
       -ms-transform: rotate(-180deg);
       transform: rotate(-180deg); }
-
-.accordeon__item:last-child .accordeon__link {
-  margin-bottom: 0; }
 
 .hidden-block {
   display: -webkit-box;
@@ -888,7 +884,6 @@ ul {
     color: #f9b43b; }
     .accordeon-y__link--active ~ .accordeon-y__text {
       width: initial;
-      overflow: visible;
       padding: 1.25rem 1.875rem; }
 
 .accordeon-y__link h4 {
