@@ -24,5 +24,26 @@ function addonacc(c, ca) {
     }
 })
 }
+
+function oneAct(c, cy, ca) {
+  let el = document.querySelector(c);
+  let elAct = document.querySelector(cy);
+  el.addEventListener('click', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+   console.log(e.target);
+    if(e.target.className === 'hamburger-menu-link__bars') {
+      document.body.style.overflow = "hidden";
+    }
+    if(e.target.className === 'nav-header__right-pic') {
+      document.body.style.overflow = "visible";
+    }
+    elAct.classList.toggle(ca);
+  })
+}
+
+
 addonacc('.section--menu', 'accordeon-y__link--active');
 addonacc('.team-right', 'accordeon__link--active');
+oneAct('.hamburger-menu-link__bars', '.menu-full', 'menu-full--active');
+oneAct('.nav-header__right-link', '.menu-full', 'menu-full--active');

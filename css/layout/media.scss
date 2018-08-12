@@ -42,6 +42,9 @@ display: inline-flex;
       align-items: center;
     }
   }
+.bigburger__left {
+  width: 28rem;
+}
   .arrow-down {
     bottom: 2.5rem;
   }
@@ -74,12 +77,15 @@ display: inline-flex;
   height: 25%;
 }
 .reviews__description {
-  padding: 5% 5%;
+  padding: 5% 4%;
   text-align: center;
   align-items: center;
 }
 .reviews__description-title {
-margin-bottom: 1rem;
+margin-bottom: 1%;
+}
+.reviews__description-text {
+  margin-bottom: 1%;
 }
 .btn--reviews {
   align-self: center;
@@ -182,6 +188,7 @@ flex-direction: column;
 .reviews__description {
   align-items: center;
   justify-content: center;
+  padding: 1% 5%;
 }
 .btn--reviews {
   align-self: center;

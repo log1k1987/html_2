@@ -66,12 +66,24 @@
  font-size: 1.3rem;
 }
 .slider-left__top {
+  display: flex;
+  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  padding: 0.625rem 1.25rem;
-  background-color: #f08c33;
   border-radius: 0.44rem;
+ 
+}
+.slider-left__top-pic {
+  position: relative;
+  align-self: flex-start;
+  padding: 0.625rem 1.25rem;
+  background: #e35028;
+  border-radius: 0.44rem;
+  &:hover > .slider-left__top-table {
+    display: table;
+  }
+
 }
 .slider-left__bottom {
   position: absolute;
@@ -88,3 +100,17 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.slider-left__top-table {
+  position: absolute;
+  display: none;
+  left: 100%;
+  top: 0;
+  width: 16rem;
+  padding: .94rem;
+  background: #fff;
+  opacity: .93;
+  color: #000;
+  border-radius: 0.44rem;
+}
+

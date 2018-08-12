@@ -5,6 +5,7 @@
   text-transform: uppercase;
   font-family: "ubuntu", helvetica, sans-serif;
   font-weight: bold;
+  position: relative;
 }
 .container--header {
   justify-content: flex-start;
@@ -88,13 +89,13 @@
 
 }
 .bigburger__left {
-  width: 28rem;
+  width: 95%;
 }
 .bigburger__pic {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  width: 50%;
+  width: 48%;
 }
 .arrow-down {
   position: absolute;
