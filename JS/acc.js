@@ -47,16 +47,18 @@ const right = document.querySelector(".arrow-right");
 const items = document.querySelector(".slider__list");
 
 right.addEventListener("click", function(e) {
+  let currentWidth = parseInt(getComputedStyle(items).width);
   e.preventDefault();
-  if (parseInt(getComputedStyle(items).left) > -3760) {
-    items.style.left=parseInt(getComputedStyle(items).left)-940+'px';
+  if (parseInt(getComputedStyle(items).left) > -currentWidth*4) {
+    items.style.left=parseInt(getComputedStyle(items).left)-currentWidth+'px';
   }
 });
 
 left.addEventListener("click", function(e) {
+  let currentWidth = parseInt(getComputedStyle(items).width);
   e.preventDefault();
   if (parseInt(getComputedStyle(items).left) !== 0) {
-    items.style.left=parseInt(getComputedStyle(items).left)+940+'px';
+    items.style.left=parseInt(getComputedStyle(items).left)+currentWidth+'px';
   }
 });
 

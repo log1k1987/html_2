@@ -12,7 +12,7 @@ html {
   min-width: 97%;
 }
 .container {
-  max-width: 95%;
+  max-width: 90%;
 }
 .nav {
   display: none;
@@ -100,8 +100,41 @@ margin-bottom: 1%;
 
 .form__left {
   margin-right: 0;
-  width: 100%;
   flex: initial;
+}
+.slider-left {
+  width: 30rem;
+}
+.slider__big-pic {
+  width: inherit;
+}
+.slider-left__bottom {
+  left: initial;
+  bottom: initial;
+  top: 0;
+  right: 0;
+}
+.slider__item {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.slider-right p {
+margin-bottom: 1rem;
+}
+.slider-right--title {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+.slider-right__price {
+  justify-content: center;
+}
+.slider-right--btn {
+  align-self: center;
+}
+.arrow-left,
+.arrow-right {
+  width: 5%;
 }
 }
 @media screen and (max-width: 480px) {   //телефон
@@ -114,9 +147,7 @@ html {
   .wrapper {
     min-width: 97%;
   }
-  .container {
-    max-width: 95%;
-  }
+
   .we-best__list {
     flex-direction: column;
     width: 100%;
@@ -193,5 +224,7 @@ flex-direction: column;
 .btn--reviews {
   align-self: center;
 }
-
+.slider-left {
+  width: 25rem;
+}
 }
