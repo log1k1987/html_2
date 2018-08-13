@@ -42,6 +42,23 @@ function oneAct(c, cy, ca) {
   })
 }
 
+const left = document.querySelector(".arrow-left");
+const right = document.querySelector(".arrow-right");
+const items = document.querySelector(".slider__list");
+
+right.addEventListener("click", function(e) {
+  e.preventDefault();
+  if (parseInt(getComputedStyle(items).left) > -3760) {
+    items.style.left=parseInt(getComputedStyle(items).left)-940+'px';
+  }
+});
+
+left.addEventListener("click", function(e) {
+  e.preventDefault();
+  if (parseInt(getComputedStyle(items).left) !== 0) {
+    items.style.left=parseInt(getComputedStyle(items).left)+940+'px';
+  }
+});
 
 addonacc('.section--menu', 'accordeon-y__link--active');
 addonacc('.team-right', 'accordeon__link--active');
