@@ -77,12 +77,22 @@ const send = document.querySelector('.form__choose-btn-send');
 send.addEventListener('click', function (e) {
   e.preventDefault();
 
-  console.log(myForm.elements.name.value);
-  console.log(myForm.elements.phone.value);
-  console.log(myForm.elements.comment.value);
-
   if(validateForm(myForm)) {
-    console.log('всё ок');
+    const data = {
+      name : myForm.elements.name.value,
+      phone : myForm.elements.phone.value,
+      comment : myForm.elements.phone.value,
+      email : 'vasya@mail.com'
+    };
+   // console.log(data);
+    const xhr = new XMLHttpRequest();
+    xhr.responseType = 'json';
+    xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail/fail');
+    
+    xhr.send(JSON.stringify(data));
+    xhr.addEventListener('load', function (e) {
+      console.log(xhr);
+    })
   }
 })
 
@@ -103,13 +113,13 @@ function validateForm(form) {
 }
 
 function validateField(field) {
-  if(!checkValidity()) {
-    field.nextElementSibling.textContent = field.validationMessage;
-
+  if(!field.checkValidity()) {
+    field.placeholder = field.validationMessage;
+    field.style.backgroundColor = 'red';
     return false;
   } else {
-    field.nextElementSibling.textContent = '';
-
+    field.placeholder = '';
+    field.style.backgroundColor = '#fff';
     return true;
   }
 }
