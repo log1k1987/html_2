@@ -66,3 +66,50 @@ addonacc('.section--menu', 'accordeon-y__link--active');
 addonacc('.team-right', 'accordeon__link--active');
 oneAct('.hamburger-menu-link__bars', '.menu-full', 'menu-full--active');
 oneAct('.nav-header__right-link', '.menu-full', 'menu-full--active');
+
+const myForm = document.querySelector('.form');
+const send = document.querySelector('.form__choose-btn-send');
+
+// console.log(myForm.elements.name);
+// console.log(myForm.elements.phone);
+// console.log(myForm.elements.comment);
+
+send.addEventListener('click', function (e) {
+  e.preventDefault();
+
+  console.log(myForm.elements.name.value);
+  console.log(myForm.elements.phone.value);
+  console.log(myForm.elements.comment.value);
+
+  if(validateForm(myForm)) {
+    console.log('всё ок');
+  }
+})
+
+function validateForm(form) {
+  let valid = true;
+
+  if(!validateField(form.elements.name)) {
+    valid = false;
+  }
+  if(!validateField(form.elements.phone)) {
+    valid = false;
+  }
+  if(!validateField(form.elements.comment)) {
+    valid = false;
+  }
+
+  return valid;
+}
+
+function validateField(field) {
+  if(!checkValidity()) {
+    field.nextElementSibling.textContent = field.validationMessage;
+
+    return false;
+  } else {
+    field.nextElementSibling.textContent = '';
+
+    return true;
+  }
+}
