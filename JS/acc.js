@@ -89,7 +89,7 @@ send.addEventListener('click', function (e) {
       email : 'vasya@mail.com',
       street : myForm.elements.street.value,
       house : myForm.elements.house.value,
-      corps : myForm.elements.sorps.value,
+      corps : myForm.elements.corps.value,
       room : myForm.elements.room.value,
       floor : myForm.elements.floor.value
     };
@@ -102,6 +102,7 @@ send.addEventListener('click', function (e) {
     
     xhr.send(JSON.stringify(data));
     xhr.addEventListener('load', function (e) {
+      document.body.style.overflow = "hidden";
       console.log(xhr);
       const successOverlay = (xhr.response !== null && xhr.response.status === 0) ? createOverlay(xhr.response.message) : createOverlay("Сообщение отправлено");
 
@@ -121,6 +122,7 @@ send.addEventListener('click', function (e) {
         closeElement.addEventListener("click", function(e) {
           e.preventDefault();
           document.body.removeChild(overlayElement);
+          document.body.style.overflow = "visible";
         });
       
         const contentElement = overlayElement.querySelector(".content");
