@@ -86,7 +86,12 @@ send.addEventListener('click', function (e) {
       name : myForm.elements.name.value,
       phone : myForm.elements.phone.value,
       comment : myForm.elements.phone.value,
-      email : 'vasya@mail.com'
+      email : 'vasya@mail.com',
+      street : myForm.elements.street.value,
+      house : myForm.elements.house.value,
+      corps : myForm.elements.sorps.value,
+      room : myForm.elements.room.value,
+      floor : myForm.elements.floor.value
     };
    // console.log(data);
     const xhr = new XMLHttpRequest();
