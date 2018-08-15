@@ -91,11 +91,43 @@ send.addEventListener('click', function (e) {
    // console.log(data);
     const xhr = new XMLHttpRequest();
     xhr.responseType = 'json';
-    xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail/fail');
+    url =  "https://webdev-api.loftschool.com/sendmail/fail";
+    url1 = "https://webdev-api.loftschool.com/sendmail/";
+    xhr.open('POST', url);
     
     xhr.send(JSON.stringify(data));
     xhr.addEventListener('load', function (e) {
       console.log(xhr);
+      const successOverlay = (xhr.response !== null && xhr.response.status === 0) ? createOverlay(xhr.response.message) : createOverlay("Сообщение отправлено");
+
+      ///////
+
+        document.body.appendChild(successOverlay);
+      
+      
+      function createOverlay(content) {
+        const overlayElement = document.createElement("div");
+        overlayElement.classList.add("overlay");
+      
+        const template = document.querySelector("#overlayTemplate");
+        overlayElement.innerHTML = template.innerHTML;
+      
+        const closeElement = overlayElement.querySelector(".btn-close");
+        closeElement.addEventListener("click", function(e) {
+          e.preventDefault();
+          document.body.removeChild(overlayElement);
+        });
+      
+        const contentElement = overlayElement.querySelector(".content");
+        contentElement.innerHTML = content;
+      
+        return overlayElement;
+      }
+
+      ///////
+
+
+
     })
   }
 })
