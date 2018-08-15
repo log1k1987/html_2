@@ -1,12 +1,15 @@
-function addonacc(c, ca) {
+function addonacc(c, ca, y=true) {
   const acc = document.querySelector(c);
   acc.addEventListener('click', function (e) {
     
     let sumActive = document.getElementsByClassName(ca);
     
     if(e.target.tagName === "A") {
-      e.preventDefault();
-      e.stopPropagation();
+      if(y) {
+         e.preventDefault();
+         e.stopPropagation();
+      }
+      
     if (e.target.classList.contains(ca)) {
       e.target.classList.remove(ca);
       //
@@ -62,6 +65,7 @@ left.addEventListener("click", function(e) {
   }
 });
 
+addonacc('.nav__list', 'nav__link--active', false);
 addonacc('.section--menu', 'accordeon-y__link--active');
 addonacc('.team-right', 'accordeon__link--active');
 oneAct('.hamburger-menu-link__bars', '.menu-full', 'menu-full--active');
