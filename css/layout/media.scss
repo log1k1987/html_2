@@ -11,8 +11,8 @@ html {
 .wrapper {
   min-width: 97%;
 }
-.container {
-  max-width: 90%;
+.btn__header {
+  font-size: 1.1rem;
 }
 .nav {
   display: none;
@@ -23,6 +23,7 @@ display: inline-flex;
 .header__col-right {
   display: inline-flex;
   align-self: center;
+  margin-left: auto;
 }
 .order-header {
   align-items: center;
@@ -43,7 +44,7 @@ display: inline-flex;
     }
   }
 .bigburger__left {
-  width: 28rem;
+  width: 63%;
 }
   .arrow-down {
     bottom: 2.5rem;

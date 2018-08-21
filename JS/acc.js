@@ -48,20 +48,28 @@ function oneAct(c, cy, ca) {
 const left = document.querySelector(".arrow-left");
 const right = document.querySelector(".arrow-right");
 const items = document.querySelector(".slider__list");
+const summSliders = document.querySelectorAll(".slider__item");
+
+const minRight = 0;
+const maxRight = summSliders.length-1 + '00';
+const step = 100;
+let currentRight = 0;
+
+items.style.right = currentRight;
 
 right.addEventListener("click", function(e) {
-  let currentWidth = parseInt(getComputedStyle(items).width);
   e.preventDefault();
-  if (parseInt(getComputedStyle(items).left) > -currentWidth*4) {
-    items.style.left=parseInt(getComputedStyle(items).left)-currentWidth+'px';
+  if (currentRight < maxRight) {
+    currentRight += step;
+    items.style.right = currentRight + "%";
   }
 });
 
 left.addEventListener("click", function(e) {
-  let currentWidth = parseInt(getComputedStyle(items).width);
   e.preventDefault();
-  if (parseInt(getComputedStyle(items).left) !== 0) {
-    items.style.left=parseInt(getComputedStyle(items).left)+currentWidth+'px';
+  if (currentRight > minRight) {
+    currentRight -= step;
+    items.style.right = currentRight + "%";
   }
 });
 
@@ -99,7 +107,6 @@ send.addEventListener('click', function (e) {
     url =  "https://webdev-api.loftschool.com/sendmail/fail";
     url1 = "https://webdev-api.loftschool.com/sendmail/";
     xhr.open('POST', url);
-    
     xhr.send(JSON.stringify(data));
     xhr.addEventListener('load', function (e) {
       document.body.style.overflow = "hidden";
@@ -166,3 +173,25 @@ function validateField(field) {
     return true;
   }
 }
+
+const reviews = document.querySelector('.section--reviews');
+const reviewsOverlay = document.querySelector('.reviews-overlay');
+const reviewsOverlayText = document.querySelector('.reviews-overlay__text');
+
+reviews.addEventListener('click', (e) => {
+  e.preventDefault();
+  let el = e.target;
+
+  if(el.classList.contains('btn--reviews')) {
+    let modalText = el.previousElementSibling.innerHTML;
+    console.log('xz');
+    reviewsOverlayText.innerHTML = modalText;
+    reviewsOverlay.style.display = 'block';
+  }
+})
+
+reviews.addEventListener('keyup', (e) => {
+  if (e.keyCode === 27) {
+    reviewsOverlay.style.display = 'none';
+  }
+})
