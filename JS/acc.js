@@ -45,8 +45,8 @@ function oneAct(c, cy, ca) {
   })
 }
 
-const left = document.querySelector(".arrow-left");
-const right = document.querySelector(".arrow-right");
+const left = document.querySelector(".arrow-left__link");
+const right = document.querySelector(".arrow-right__link");
 const items = document.querySelector(".slider__list");
 const summSliders = document.querySelectorAll(".slider__item");
 
