@@ -184,9 +184,11 @@ reviews.addEventListener('click', (e) => {
 
   if(el.classList.contains('btn--reviews')) {
     let modalText = el.previousElementSibling.innerHTML;
-    console.log('xz');
     reviewsOverlayText.innerHTML = modalText;
     reviewsOverlay.style.display = 'block';
+  }
+  if(el.classList.contains('reviews-overlay__btn-close')) {
+    reviewsOverlay.style.display = 'none';
   }
 })
 
