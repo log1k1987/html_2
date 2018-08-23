@@ -263,7 +263,7 @@ function init() {
     let clusterer = new ymaps.Clusterer({
         clusterIcons: [
             {
-                href: 'img/map-marker.png',
+                href: 'img/bg.png',
                 size: [100, 100],
                 offset: [-50, -50],
             },
