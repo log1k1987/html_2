@@ -200,67 +200,78 @@ reviews.addEventListener('keyup', e => {
 ymaps.ready(init);
 
 let placemarks = [
-    {
-        latitude: 59.97,
-        longitude: 30.31,
-        hintContent: '<div class="map__hint">Ул. Литераторов, д. 19</div>',
-        balloonContent: [
-            '<div class="map__balloon">',
-            '<img class="map__burger-img" src="img/section--header/big-burger.png" alt="Бургер"/>',
-            'Самые вкусные бургеры у нас! Заходите по адресу: Ул. Литераторов, д. 19',
-            '</div>',
-        ],
-    },
-    {
-        latitude: 59.93,
-        longitude: 30.34,
-        hintContent: '<div class="map__hint">Малый проспект В Щ. д. 64</div>',
-        balloonContent: [
-            '<div class="map__balloon">',
-            '<img class="map__burger-img" src="img/section--header/big-burger.png" alt="Бургер"/>',
-            'Самые вкусные бургеры у нас! Заходите по адресу: Малый проспект В Щ. д. 64',
-            '</div>',
-        ],
-    },
-    {
-        latitude: 59.94,
-        longitude: 30.32,
-        hintContent: '<div class="map__hint">Набережная реки фонтанкиб д. 56</div>',
-        balloonContent: [
-            '<div class="map__balloon">',
-            '<img class="map__burger-img" src="img/section--header/big-burger.png" alt="Бургер"/>',
-            'Самые вкусные бургеры у нас! Заходите по адресу: Набережная реки фонтанкиб д. 56',
-            '</div>',
-        ],
-    },
-];
-
-function init() {
-    let map = new ymaps.Map('map', {
-        center: [59.94, 30.32],
-        zoom: 12,
-        controls: ['zoomControl'],
-        behaviors: ['drag'],
-    });
-
-    let placemark = new ymaps.Placemark(
-        [59.97, 30.31],
         {
+            latitude: 59.97,
+            longitude: 30.31,
             hintContent: '<div class="map__hint">Ул. Литераторов, д. 19</div>',
             balloonContent: [
                 '<div class="map__balloon">',
                 '<img class="map__burger-img" src="img/section--header/big-burger.png" alt="Бургер"/>',
                 'Самые вкусные бургеры у нас! Заходите по адресу: Ул. Литераторов, д. 19',
                 '</div>',
-            ].join(''),
+            ],
         },
         {
-            iconLayout: 'default#image',
-            iconImageHref: 'img/map-marker.svg',
-            iconImageSize: [46, 57],
-            iconImageOffset: [-23, -57],
-        }
-    );
+            latitude: 59.93,
+            longitude: 30.34,
+            hintContent: '<div class="map__hint">Малый проспект В Щ. д. 64</div>',
+            balloonContent: [
+                '<div class="map__balloon">',
+                '<img class="map__burger-img" src="img/section--header/big-burger.png" alt="Бургер"/>',
+                'Самые вкусные бургеры у нас! Заходите по адресу: Малый проспект В Щ. д. 64',
+                '</div>',
+            ],
+        },
+        {
+            latitude: 59.94,
+            longitude: 30.32,
+            hintContent: '<div class="map__hint">Набережная реки фонтанкиб д. 56</div>',
+            balloonContent: [
+                '<div class="map__balloon">',
+                '<img class="map__burger-img" src="img/section--header/big-burger.png" alt="Бургер"/>',
+                'Самые вкусные бургеры у нас! Заходите по адресу: Набережная реки фонтанкиб д. 56',
+                '</div>',
+            ],
+        },
+    ],
+    geoObjects = [];
 
-    map.geoObjects.add(placemark);
+function init() {
+    let map = new ymaps.Map('8', {
+        center: [59.94, 30.32],
+        zoom: 12,
+        controls: ['zoomControl'],
+        behaviors: ['drag'],
+    });
+
+    for (let i = 0; i < placemarks.length; i++) {
+        geoObjects[i] = new ymaps.Placemark(
+            [placemarks[i].latitude, placemarks[i].longitude],
+            {
+                hintContent: placemarks[i].hintContent,
+                balloonContent: placemarks[i].balloonContent.join(''),
+            },
+            {
+                iconLayout: 'default#image',
+                iconImageHref: 'img/map-marker.png',
+                iconImageSize: [46, 57],
+                iconImageOffset: [-23, -57],
+            }
+        );
+    }
+
+    let clusterer = new ymaps.Clusterer({
+        clusterIcons: [
+            {
+                href: 'img/map-marker.png',
+                size: [100, 100],
+                offset: [-50, -50],
+            },
+        ],
+        clusterIconContentLayout: null,
+    });
+
+    map.geoObjects.add(clusterer);
+    // map.geoObjects.add(placemark);
+    clusterer.add(geoObjects);
 }
