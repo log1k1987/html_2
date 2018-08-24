@@ -1,6 +1,7 @@
-function addonacc(c, ca, y = true) {
+function addonacc(c, ca, y) {
+
     const acc = document.querySelector(c);
-    acc.addEventListener('click', function(e) {
+    acc.addEventListener('click', function (e) {
         let sumActive = document.getElementsByClassName(ca);
 
         if (e.target.tagName === 'A') {
@@ -30,16 +31,16 @@ function addonacc(c, ca, y = true) {
 function oneAct(c, cy, ca) {
     let el = document.querySelector(c);
     let elAct = document.querySelector(cy);
-    el.addEventListener('click', function(e) {
+    el.addEventListener('click', function (e) {
         e.preventDefault();
         e.stopPropagation();
         console.log(e.target);
-        if (e.target.className === 'hamburger-menu-link__bars') {
-            document.body.style.overflow = 'hidden';
-        }
-        if (e.target.className === 'nav-header__right-pic') {
-            document.body.style.overflow = 'visible';
-        }
+        // if (e.target.className === 'hamburger-menu-link__bars') {
+        //     document.body.style.overflow = 'hidden';
+        // }
+        // if (e.target.className === 'nav-header__right-pic') {
+        //     document.body.style.overflow = 'visible';
+        // }
         elAct.classList.toggle(ca);
     });
 }
@@ -56,7 +57,7 @@ let currentRight = 0;
 
 items.style.right = currentRight;
 
-right.addEventListener('click', function(e) {
+right.addEventListener('click', function (e) {
     e.preventDefault();
     if (currentRight < maxRight) {
         currentRight += step;
@@ -64,7 +65,7 @@ right.addEventListener('click', function(e) {
     }
 });
 
-left.addEventListener('click', function(e) {
+left.addEventListener('click', function (e) {
     e.preventDefault();
     if (currentRight > minRight) {
         currentRight -= step;
@@ -73,8 +74,8 @@ left.addEventListener('click', function(e) {
 });
 
 addonacc('.nav__list', 'nav__link--active', false);
-addonacc('.section--menu', 'accordeon-y__link--active');
-addonacc('.team-right', 'accordeon__link--active');
+addonacc('.section--menu', 'accordeon-y__link--active', true);
+addonacc('.team-right', 'accordeon__link--active', true);
 oneAct('.hamburger-menu-link__bars', '.menu-full', 'menu-full--active');
 oneAct('.nav-header__right-link', '.menu-full', 'menu-full--active');
 
@@ -85,7 +86,7 @@ const send = document.querySelector('.form__choose-btn-send');
 // console.log(myForm.elements.phone);
 // console.log(myForm.elements.comment);
 
-send.addEventListener('click', function(e) {
+send.addEventListener('click', function (e) {
     e.preventDefault();
 
     if (validateForm(myForm)) {
@@ -107,13 +108,13 @@ send.addEventListener('click', function(e) {
         url1 = 'https://webdev-api.loftschool.com/sendmail/';
         xhr.open('POST', url);
         xhr.send(JSON.stringify(data));
-        xhr.addEventListener('load', function(e) {
-            document.body.style.overflow = 'hidden';
-            console.log(xhr);
+        xhr.addEventListener('load', function (e) {
+            // document.body.style.overflow = 'hidden';
+            // console.log(xhr);
             const successOverlay =
-                xhr.response !== null && xhr.response.status === 0
-                    ? createOverlay(xhr.response.message)
-                    : createOverlay('Сообщение отправлено');
+                xhr.response !== null && xhr.response.status === 0 ?
+                createOverlay(xhr.response.message) :
+                createOverlay('Сообщение отправлено');
 
             ///////
 
@@ -127,10 +128,10 @@ send.addEventListener('click', function(e) {
                 overlayElement.innerHTML = template.innerHTML;
 
                 const closeElement = overlayElement.querySelector('.btn-close');
-                closeElement.addEventListener('click', function(e) {
+                closeElement.addEventListener('click', function (e) {
                     e.preventDefault();
                     document.body.removeChild(overlayElement);
-                    document.body.style.overflow = 'visible';
+                    //  document.body.style.overflow = 'visible';
                 });
 
                 const contentElement = overlayElement.querySelector('.content');
@@ -199,8 +200,7 @@ reviews.addEventListener('keyup', e => {
 //yandex maps
 ymaps.ready(init);
 
-let placemarks = [
-        {
+let placemarks = [{
             latitude: 59.97,
             longitude: 30.31,
             hintContent: '<div class="map__hint">Ул. Литераторов, д. 19</div>',
@@ -246,12 +246,10 @@ function init() {
 
     for (let i = 0; i < placemarks.length; i++) {
         geoObjects[i] = new ymaps.Placemark(
-            [placemarks[i].latitude, placemarks[i].longitude],
-            {
+            [placemarks[i].latitude, placemarks[i].longitude], {
                 hintContent: placemarks[i].hintContent,
                 balloonContent: placemarks[i].balloonContent.join(''),
-            },
-            {
+            }, {
                 iconLayout: 'default#image',
                 iconImageHref: 'img/map-marker.png',
                 iconImageSize: [46, 57],
@@ -261,13 +259,11 @@ function init() {
     }
 
     let clusterer = new ymaps.Clusterer({
-        clusterIcons: [
-            {
-                href: 'img/bg.png',
-                size: [100, 100],
-                offset: [-50, -50],
-            },
-        ],
+        clusterIcons: [{
+            href: 'img/bg.png',
+            size: [100, 100],
+            offset: [-50, -50],
+        }, ],
         clusterIconContentLayout: null,
     });
 
