@@ -575,7 +575,7 @@ ul {
   width: 100%; }
 
 .header__col-left {
-  margin-right: 3.2rem; }
+  margin-right: auto; }
 
 .logo__link {
   display: block; }
