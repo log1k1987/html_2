@@ -14,7 +14,7 @@
 <body>
   <div class="wrapper">
     <div class="maincontent">
-      <section data-scroll-to="0" class="section section--header active">
+      <section data-scroll-to="0" class="section section--header">
         <div class="container container--header">
           <header class="header">
 
@@ -81,7 +81,7 @@
           <div class="arrow-down">
             <a href="" data-scroll-to="1" class="arrow-down__link">
               <!-- <img src="img/section--header/arrow-scroll.png" alt="scroll down" class="arrow-down__pic"> -->
-              <svg width="1.8rem" height="0.94rem" class="scrol-icon">
+              <svg preserveAspectRatio="none" width="1.8rem" height="0.94rem" class="scrol-icon">
                 <use xlink:href="img/sprite.svg#arrow-scroll"></use>
               </svg>
             </a>
@@ -770,7 +770,7 @@
         </div>
       </section>
 
-      <section data-scroll-to="5" class="section section--reviews">
+      <section data-scroll-to="5" class="section section--reviews active">
 
         <div class="reviews">
           <ul class="reviews__list">
@@ -847,6 +847,35 @@
           </div>
         </div>
 
+      </section>
+
+      <section class="section section--video">
+        <div class="container">
+          <h2 class="title">Как мы работаем</h2>
+          <div class="player">
+            <video poster="img/section--video/poster.jpg" class="player__video" src="video/video.mp4"></video>
+            <a class="player__start player__start-center">
+              <svg width="10.6875rem" height="10.6875rem" class="play">
+                <use xlink:href="img/sprite.svg#play"></use>
+              </svg>
+            </a>
+            <div class="player__controls">
+              <a class="player__start">
+                <svg width="1.6875rem" height="1.6875rem" class="play">
+                  <use xlink:href="img/sprite.svg#play"></use>
+                </svg>
+              </a>
+
+              <div class="player__playback">
+                <button class="player__playback-button"></button>
+              </div>
+              <div class="player__duration">
+                <span class="player__duration-completed">0:00</span> :
+                <span class="player__duration-estimate">0:00</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section data-scroll-to="6" class="section section--delivery">
@@ -1029,6 +1058,7 @@
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
   <script src="JS/ops.js"></script>
   <script src="JS/acc.js"></script>
+  <script src="JS/player.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,36 @@
+.section--video {
+    background: url('../img/section--video/bg.jpg');
+    background-size: cover;
+}
+
+.player {
+    position: relative;
+}
+
+.player__video {
+    width: 600px;
+    height: 400px;
+}
+
+.player__controls {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 20%;
+    background: #3e3e3e;
+}
+
+.player__start {
+    cursor: pointer;
+    fill: #626262;
+}
+
+.player__start-center {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    fill: rgba(255, 255, 255, .85);
+}
