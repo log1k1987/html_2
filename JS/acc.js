@@ -236,7 +236,7 @@ let placemarks = [{
     geoObjects = [];
 
 function init() {
-    let map = new ymaps.Map('8', {
+    let map = new ymaps.Map('map', {
         center: [59.94, 30.32],
         zoom: 12,
         controls: ['zoomControl'],
