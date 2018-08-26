@@ -1,5 +1,4 @@
 function addonacc(c, ca, y) {
-
     const acc = document.querySelector(c);
     acc.addEventListener('click', function (e) {
         let sumActive = document.getElementsByClassName(ca);
@@ -33,8 +32,8 @@ function oneAct(c, cy, ca) {
     let elAct = document.querySelector(cy);
     el.addEventListener('click', function (e) {
         e.preventDefault();
-        e.stopPropagation();
-        console.log(e.target);
+        // e.stopPropagation();
+        // console.log(e.target);
         // if (e.target.className === 'hamburger-menu-link__bars') {
         //     document.body.style.overflow = 'hidden';
         // }
