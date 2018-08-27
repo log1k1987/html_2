@@ -16,13 +16,13 @@ player.addEventListener('click', (e) => {
       // если видео остановлено, запускаем
       playerVideo.play();
       btnStartBig.style.display = 'none';
-      btnStartSmall.setAttribute('height', '1rem');
-      btnStartSmall.firstElementChild.setAttribute('xlink:href', 'img/sprite.svg#pause');
+      //btnStartSmall.setAttribute('height', '1rem');
+      // btnStartSmall.firstElementChild.setAttribute('xlink:href', 'img/sprite.svg#pause');
     } else {
       playerVideo.pause();
       btnStartBig.style.display = 'block';
-      btnStartSmall.setAttribute('height', '2.5rem');
-      btnStartSmall.firstElementChild.setAttribute('xlink:href', 'img/sprite.svg#play');
+      //btnStartSmall.setAttribute('height', '2.5rem');
+      //btnStartSmall.firstElementChild.setAttribute('xlink:href', 'img/sprite.svg#play');
     }
   }
 

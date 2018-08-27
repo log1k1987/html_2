@@ -12,7 +12,7 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  max-width: 80%;
+  max-width: 95%;
   height: 80%;
 }
 
@@ -51,7 +51,6 @@
 .arrow-left {
   display: flex;
   align-items: center;
-  width: 10%;
   justify-content: center;
   align-self: center;
   position: absolute;
@@ -60,11 +59,11 @@
 }
 
 .arrow-left {
-  left: 0;
+  left: -3%;
 }
 
 .arrow-right {
-  right: 0;
+  right: -3%;
 }
 
 .arrow-left__link {
@@ -112,6 +111,7 @@
 
 .slider-right--title {
   color: #fff;
+  font-size: 4rem;
 }
 
 .slider-left__top-desc {

@@ -95,6 +95,7 @@
   flex-direction: column;
   justify-content: center;
   height: 100%;
+  font-size: 1.5rem;
 }
 
 .nav-header {
@@ -117,7 +118,7 @@
     border-radius: 50%;
     background: #fff;
     left: 50%;
-    bottom: -60%;
+    bottom: -25%;
   }
   &:last-child:after {
     content: none;

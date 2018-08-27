@@ -3,6 +3,11 @@
     background-size: cover;
 }
 
+.title--video {
+    text-align: center;
+    color: #000;
+}
+
 .player {
     position: relative;
     width: 70%;
@@ -51,6 +56,7 @@
     left: 7%;
     top: 40%;
 }
+
 .player__playback-mark {
     width: 10px;
     height: 10px;
@@ -59,15 +65,16 @@
     position: absolute;
     top: 0;
     left: 0;
-    transform: translate(-50%, -25%);
-    //transform: translateY(-25%);
+    transform: translate(-50%, -25%); //transform: translateY(-25%);
 }
+
 .player__sound {
     position: absolute;
     top: 0;
     right: 17%;
     fill: #626262;
 }
+
 .player__soundback {
     cursor: pointer;
     width: 8%;
@@ -77,6 +84,7 @@
     right: 7%;
     top: 40%;
 }
+
 .player__soundback-mark {
     width: 10px;
     height: 10px;

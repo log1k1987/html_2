@@ -1,3 +1,10 @@
+const dimenu = document.querySelector('.menu-full');
+
+dimenu.addEventListener('click', function (e) {
+    //e.preventDefault();
+    dimenu.classList.toggle('menu-full--active');
+});
+
 function addonacc(c, ca, y) {
     const acc = document.querySelector(c);
     acc.addEventListener('click', function (e) {
@@ -32,14 +39,6 @@ function oneAct(c, cy, ca) {
     let elAct = document.querySelector(cy);
     el.addEventListener('click', function (e) {
         e.preventDefault();
-        // e.stopPropagation();
-        // console.log(e.target);
-        // if (e.target.className === 'hamburger-menu-link__bars') {
-        //     document.body.style.overflow = 'hidden';
-        // }
-        // if (e.target.className === 'nav-header__right-pic') {
-        //     document.body.style.overflow = 'visible';
-        // }
         elAct.classList.toggle(ca);
     });
 }
@@ -175,6 +174,7 @@ function validateField(field) {
 const reviews = document.querySelector('.section--reviews');
 const reviewsOverlay = document.querySelector('.reviews-overlay');
 const reviewsOverlayText = document.querySelector('.reviews-overlay__text');
+const reviewsOverlayTitle = document.querySelector('.reviews-overlay__title');
 
 reviews.addEventListener('click', e => {
     e.preventDefault();
@@ -182,7 +182,9 @@ reviews.addEventListener('click', e => {
 
     if (el.classList.contains('btn--reviews')) {
         let modalText = el.previousElementSibling.innerHTML;
+        let modalTitle = el.previousElementSibling.previousElementSibling.innerHTML;
         reviewsOverlayText.innerHTML = modalText;
+        reviewsOverlayTitle.innerHTML = modalTitle;
         reviewsOverlay.style.display = 'block';
     }
     if (el.classList.contains('reviews-overlay__btn-close')) {
