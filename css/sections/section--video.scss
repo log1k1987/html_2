@@ -5,11 +5,15 @@
 
 .player {
     position: relative;
+    width: 70%;
+    height: 53%;
+    overflow: hidden;
 }
 
 .player__video {
-    width: 600px;
-    height: 400px;
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
 }
 
 .player__controls {
@@ -17,20 +21,69 @@
     bottom: 0;
     left: 0;
     right: 0;
-    height: 20%;
+    height: 9%;
     background: #3e3e3e;
 }
 
 .player__start {
-    cursor: pointer;
     fill: #626262;
+    cursor: auto;
 }
 
 .player__start-center {
-    cursor: pointer;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    fill: rgba(255, 255, 255, .85);
+    fill: rgba(255, 255, 255, 0.85);
+}
+
+.player__start-use {
+    cursor: pointer;
+}
+
+.player__playback {
+    cursor: pointer;
+    width: 67%;
+    height: 15%;
+    position: absolute;
+    background: #626262;
+    left: 7%;
+    top: 40%;
+}
+.player__playback-mark {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #626262;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -25%);
+    //transform: translateY(-25%);
+}
+.player__sound {
+    position: absolute;
+    top: 0;
+    right: 17%;
+    fill: #626262;
+}
+.player__soundback {
+    cursor: pointer;
+    width: 8%;
+    height: 15%;
+    position: absolute;
+    background: #626262;
+    right: 7%;
+    top: 40%;
+}
+.player__soundback-mark {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #626262;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -25%);
 }
