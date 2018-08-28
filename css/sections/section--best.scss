@@ -1,0 +1,44 @@
+.section--best {
+  background: url('../img/section--best/bg.jpg') center center no-repeat;
+  background-size: cover;
+}
+.title--best {
+  color: #2f3234;
+  margin-bottom: 3.125rem;
+}
+.we-best {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__item-pic {
+    margin-bottom: 1.875rem;
+  }
+  
+}
+
+.we-best__list {
+  display: flex;
+  align-items: baseline;
+}
+.we-best__item {
+  width: 33.33%;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.we-best__item-pic {
+  display: flex;
+  justify-content: center;
+}
+.we-best__item h3 {
+  margin-bottom: 1.875rem;
+  font-family: "lifehack", helvetica, sans-serif;
+      font-weight: 500;
+      font-size: 1.5rem;
+  text-align: center;
+}
+.we-best__item p {
+ color: #787776;
+ font-size: 0.875rem;
+ text-align: center;
+ font-weight: 300;
+}

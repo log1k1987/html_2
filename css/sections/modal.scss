@@ -1,0 +1,32 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #0005;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
+
+.modal {
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #fff;
+  border-radius: 0.44rem;
+  padding: 1.25rem;
+}
+
+.content {
+  display: flex;
+  margin-bottom: 1.25rem;
+}
+
+.btn-close {
+  display: inline-flex;
+}
