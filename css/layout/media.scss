@@ -11,6 +11,7 @@
     height: 2.4rem;
     position: absolute;
     left: 5%;
+    top: 3%;
   } //планшет
   .player__start-center {
     fill: rgba(0, 0, 0, 0.85);
@@ -175,6 +176,9 @@
     width: 70%;
     left: 20%;
     top: 41%;
+  }
+  .player__start-small {
+    top: 8%;
   }
   html {
     font-size: 12px;

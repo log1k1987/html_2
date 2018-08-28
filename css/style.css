@@ -1107,12 +1107,12 @@ ul {
 
 .player__playback {
   cursor: pointer;
-  width: 67%;
+  width: 60%;
   height: 15%;
   position: absolute;
   background: #626262;
-  left: 7%;
-  top: 45%; }
+  left: 11%;
+  top: 40%; }
 
 .player__playback-mark {
   width: 10px;
@@ -1128,7 +1128,7 @@ ul {
 
 .player__sound {
   position: absolute;
-  top: 0;
+  top: 3%;
   right: 17%;
   fill: #626262;
   width: 2rem;
@@ -1156,8 +1156,11 @@ ul {
   transform: translate(-50%, -25%); }
 
 .player__start-small {
+  position: absolute;
   width: 2rem;
-  height: 2rem; }
+  height: 2rem;
+  left: 2%;
+  top: 1%; }
 
 .section--delivery {
   background: url("../img/section--delivery/bg.jpg");
@@ -1692,7 +1695,8 @@ ul {
   .player__start-small {
     height: 2.4rem;
     position: absolute;
-    left: 5%; }
+    left: 5%;
+    top: 3%; }
   .player__start-center {
     fill: rgba(0, 0, 0, 0.85); }
   .player__soundback,
@@ -1848,6 +1852,8 @@ ul {
     width: 70%;
     left: 20%;
     top: 41%; }
+  .player__start-small {
+    top: 8%; }
   html {
     font-size: 12px; }
   .bigburger__left {
