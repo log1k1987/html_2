@@ -83,13 +83,10 @@ addonacc('.team-right', 'accordeon__link--active', true);
 oneAct('.hamburger-menu-link__bars', '.menu-full', 'menu-full--active');
 oneAct('.nav-header__right-link', '.menu-full', 'menu-full--active');
 
-const myForm = document.querySelector('.form');
+const orderForm = document.querySelector('.form');
 const send = document.querySelector('.form__choose-btn-send');
 
-// console.log(myForm.elements.name);
-// console.log(myForm.elements.phone);
-// console.log(myForm.elements.comment);
-
+/////////////////////////////////////
 send.addEventListener('click', function (e) {
     e.preventDefault();
 
@@ -113,17 +110,17 @@ send.addEventListener('click', function (e) {
         return overlayElement;
     }
 
-    if (validateForm(myForm)) {
+    if (validateForm(orderForm)) {
         const data = {
-            name: myForm.elements.name.value,
-            phone: myForm.elements.phone.value,
-            comment: myForm.elements.phone.value,
+            name: orderForm.elements.name.value,
+            phone: orderForm.elements.phone.value,
+            comment: orderForm.elements.phone.value,
             email: 'vasya@mail.com',
-            street: myForm.elements.street.value,
-            house: myForm.elements.house.value,
-            corps: myForm.elements.corps.value,
-            room: myForm.elements.room.value,
-            floor: myForm.elements.floor.value,
+            street: orderForm.elements.street.value,
+            house: orderForm.elements.house.value,
+            corps: orderForm.elements.corps.value,
+            room: orderForm.elements.room.value,
+            floor: orderForm.elements.floor.value,
         };
         // console.log(data);
         const xhr = new XMLHttpRequest();
@@ -291,8 +288,8 @@ function init() {
 }
 
 
-// console.log(myForm.elements.phone);  //////////////////////////
-const filterPhone = myForm.elements.phone;
+// console.log(orderForm.elements.phone);  //////////////////////////
+const filterPhone = orderForm.elements.phone;
 
 filterPhone.addEventListener('keydown', (e) => {
     let isDigit = false;

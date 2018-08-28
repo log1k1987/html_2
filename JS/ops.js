@@ -73,14 +73,14 @@ $(document).on({
         break;
     }
   },
-  touchmove: e => e.preventDefault()
+  touchmove: e => e.preventDefault(),
 
   // touchstart touchend touchmove 
 });
 
 
 $('[data-scroll-to]').on('click', e => {
-  e.preventDefault();
+  // e.preventDefault();
 
   const target = parseInt($(e.currentTarget).attr('data-scroll-to'));
 
