@@ -54,7 +54,7 @@
     position: absolute;
     background: #626262;
     left: 7%;
-    top: 40%;
+    top: 45%;
 }
 
 .player__playback-mark {
@@ -73,6 +73,8 @@
     top: 0;
     right: 17%;
     fill: #626262;
+    width: 2rem;
+    height: 2rem;
 }
 
 .player__soundback {
@@ -94,4 +96,9 @@
     top: 0;
     left: 0;
     transform: translate(-50%, -25%);
+}
+
+.player__start-small {
+    width: 2rem;
+    height: 2rem;
 }

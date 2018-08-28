@@ -3,6 +3,7 @@
   background-size: cover;
   position: relative;
 }
+
 .team-right {
   position: absolute;
   top: 0;
@@ -15,11 +16,13 @@
   justify-content: center;
   align-items: center;
 }
+
 .team-right__content {
   display: flex;
   flex-direction: column;
   width: 70%;
 }
+
 .accordeon__item {
   color: #fff;
   margin-bottom: 2.5rem;
@@ -45,11 +48,10 @@
     transition: 0.3s;
     margin-right: 0.625rem;
   }
-
   &--active {
     color: #f9b43b;
-    & ~ .hidden-block {
-      height: initial;
+    &~.hidden-block {
+      height: 6.25rem;
     }
     &:before {
       transform-origin: 50% 25% 0;
@@ -58,23 +60,25 @@
   }
 }
 
-
-
-
 .hidden-block {
   display: flex;
   height: 0;
   overflow: hidden;
+  transition: .3s;
 }
+
 .hidden-block__ava {
   margin-right: 1.25rem;
 }
+
 .hidden-block__pic {
   border-radius: 50%;
 }
+
 .hidden-block__info-title {
   margin-bottom: 1.25rem;
 }
+
 .hidden-block__info {
   display: flex;
   flex-direction: column;

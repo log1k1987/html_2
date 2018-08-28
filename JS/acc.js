@@ -1,8 +1,10 @@
 const dimenu = document.querySelector('.menu-full');
+//if (document.querySelector('.menu-full--active'))
 
 dimenu.addEventListener('click', function (e) {
-    //e.preventDefault();
-    dimenu.classList.toggle('menu-full--active');
+    if (e.target.classList.contains('menu-full__link')) {
+        dimenu.classList.toggle('menu-full--active');
+    }
 });
 
 function addonacc(c, ca, y) {
@@ -10,7 +12,10 @@ function addonacc(c, ca, y) {
     acc.addEventListener('click', function (e) {
         let sumActive = document.getElementsByClassName(ca);
 
+
+
         if (e.target.tagName === 'A') {
+
             if (y) {
                 e.preventDefault();
                 e.stopPropagation();
@@ -33,6 +38,7 @@ function addonacc(c, ca, y) {
         }
     });
 }
+const stopScroll = document.querySelector('.maincontent');
 
 function oneAct(c, cy, ca) {
     let el = document.querySelector(c);
@@ -87,6 +93,26 @@ const send = document.querySelector('.form__choose-btn-send');
 send.addEventListener('click', function (e) {
     e.preventDefault();
 
+    function createOverlay(content) {
+        const overlayElement = document.createElement('div');
+        overlayElement.classList.add('overlay');
+
+        const template = document.querySelector('#overlayTemplate');
+        overlayElement.innerHTML = template.innerHTML;
+
+        const closeElement = overlayElement.querySelector('.btn-close');
+        closeElement.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.body.removeChild(overlayElement);
+            //  document.body.style.overflow = 'visible';
+        });
+
+        const contentElement = overlayElement.querySelector('.content');
+        contentElement.innerHTML = content;
+
+        return overlayElement;
+    }
+
     if (validateForm(myForm)) {
         const data = {
             name: myForm.elements.name.value,
@@ -118,28 +144,11 @@ send.addEventListener('click', function (e) {
 
             document.body.appendChild(successOverlay);
 
-            function createOverlay(content) {
-                const overlayElement = document.createElement('div');
-                overlayElement.classList.add('overlay');
-
-                const template = document.querySelector('#overlayTemplate');
-                overlayElement.innerHTML = template.innerHTML;
-
-                const closeElement = overlayElement.querySelector('.btn-close');
-                closeElement.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    document.body.removeChild(overlayElement);
-                    //  document.body.style.overflow = 'visible';
-                });
-
-                const contentElement = overlayElement.querySelector('.content');
-                contentElement.innerHTML = content;
-
-                return overlayElement;
-            }
-
             ///////
         });
+    } else {
+        document.body.appendChild(createOverlay('Заполните поля выделенные красным'));
+
     }
 });
 
@@ -155,13 +164,21 @@ function validateForm(form) {
     if (!validateField(form.elements.comment)) {
         valid = false;
     }
-
+    if (!validateField(form.elements.street)) {
+        valid = false;
+    }
+    if (!validateField(form.elements.house)) {
+        valid = false;
+    }
     return valid;
 }
 
+
+
 function validateField(field) {
     if (!field.checkValidity()) {
-        field.placeholder = field.validationMessage;
+        //field.placeholder = field.validationMessage;
+
         field.style.backgroundColor = 'red';
         return false;
     } else {
@@ -272,3 +289,22 @@ function init() {
     // map.geoObjects.add(placemark);
     clusterer.add(geoObjects);
 }
+
+
+// console.log(myForm.elements.phone);  //////////////////////////
+const filterPhone = myForm.elements.phone;
+
+filterPhone.addEventListener('keydown', (e) => {
+    let isDigit = false;
+    let isControl = false;
+
+    if (event.key >= 0 || event.key <= 9) {
+        isDigit = true;
+    }
+    if (event.key === 'ArrowLeft' || event.key === 'ArrowRight' || event.key === 'Backspace') {
+        isControl = true;
+    }
+    if (!isDigit && !isControl) {
+        e.preventDefault();
+    }
+})

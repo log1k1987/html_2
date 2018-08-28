@@ -1,5 +1,5 @@
 const sections = $(".section");
-const display = $(".maincontent");
+let display = $(".maincontent");
 let inScroll = false;
 
 const mobileDetect = new MobileDetect(window.navigator.userAgent);
@@ -9,6 +9,7 @@ const setActiveMenuItem = itemEq => {
   $('.nav__item').eq(itemEq).addClass('nav__item--active')
     .siblings().removeClass('nav__item--active')
 }
+//alert(document.querySelector('.menu-full--active'));
 
 const performTransition = sectionEq => {
   const position = `${sectionEq * -100}%`;
@@ -52,8 +53,10 @@ $(document).on({
   wheel: e => {
     const deltaY = e.originalEvent.deltaY;
     const direction = deltaY > 0 ? "down" : "up";
+    if (!document.querySelector('.menu-full--active')) {
+      scrollToSection(direction);
+    }
 
-    scrollToSection(direction);
   },
   keydown: e => {
     switch (e.keyCode) {

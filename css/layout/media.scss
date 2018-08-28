@@ -7,7 +7,22 @@
 }
 
 @media screen and (max-width: 768px) {
-  //планшет
+  .player__start-small {
+    height: 2.4rem;
+    position: absolute;
+    left: 5%;
+  } //планшет
+  .player__start-center {
+    fill: rgba(0, 0, 0, 0.85);
+  }
+  .player__soundback,
+  .player__sound {
+    display: none;
+  }
+  .player__playback {
+    width: 80%;
+    left: 15%;
+  }
   html {
     font-size: 13px;
   }
@@ -67,6 +82,13 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+  }
+  .accordeon__link {
+    &--active {
+      &~.hidden-block {
+        height: 16.5rem;
+      }
+    }
   }
   .hidden-block__ava {
     margin-right: 0;
@@ -149,6 +171,11 @@
 
 @media screen and (max-width: 480px) {
   //телефон
+  .player__playback {
+    width: 70%;
+    left: 20%;
+    top: 41%;
+  }
   html {
     font-size: 12px;
   }
