@@ -61,11 +61,15 @@ $(document).on({
   keydown: e => {
     switch (e.keyCode) {
       case 40:
-        scrollToSection("down");
+        if (!document.querySelector('.menu-full--active')) {
+          scrollToSection("down");
+        }
         break;
 
       case 38:
-        scrollToSection("up");
+        if (!document.querySelector('.menu-full--active')) {
+          scrollToSection("up");
+        }
         break;
     }
   },
